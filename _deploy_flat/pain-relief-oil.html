@@ -134,6 +134,32 @@ nav.solid .nav-logo img{height:38px}
 .mini-trust svg{width:22px;height:22px;flex:0 0 22px;stroke:var(--amber);fill:none;stroke-width:1.5}
 .ship-note{font-size:12.5px;color:rgba(243,235,221,.5);margin-top:16px;line-height:1.6}
 
+
+/* hero accordion (Description / How to use) */
+.hacc{margin-top:30px;border-top:1px solid rgba(243,235,221,.16)}
+.hacc-item{border-bottom:1px solid rgba(243,235,221,.16)}
+.hacc-item>button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;text-align:left;font-family:var(--font-sans);font-size:15px;font-weight:600;letter-spacing:.01em;color:var(--bone);transition:color .25s}
+.hacc-item>button:hover{color:var(--amber)}
+.hacc-item>button:focus-visible{outline:2px solid var(--amber);outline-offset:4px;border-radius:4px}
+.hacc .pm{position:relative;flex:0 0 16px;width:16px;height:16px}
+.hacc .pm::before,.hacc .pm::after{content:"";position:absolute;left:0;top:50%;width:16px;height:1.6px;background:currentColor;transform:translateY(-50%);transition:transform .4s var(--ease)}
+.hacc .pm::after{transform:translateY(-50%) rotate(90deg)}
+.hacc-item.open .pm::after{transform:translateY(-50%) rotate(0)}
+.hacc-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+.hacc-item.open .hacc-body{grid-template-rows:1fr}
+.hacc-body>div{overflow:hidden}
+.hacc-in{padding:0 0 24px;font-size:14.5px;line-height:1.7;color:rgba(243,235,221,.74)}
+.hacc-in p+p{margin-top:12px}
+.hacc-in dl{display:grid;grid-template-columns:auto 1fr;gap:8px 20px;margin-top:16px;font-size:13.5px}
+.hacc-in dt{color:rgba(243,235,221,.5);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding-top:2px}
+.hacc-in dd{color:var(--bone)}
+.hacc-in ol{list-style:none;counter-reset:s;display:grid;gap:12px}
+.hacc-in ol li{counter-increment:s;display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:baseline}
+.hacc-in ol li::before{content:"0" counter(s);font-family:var(--font-serif);color:var(--amber);font-size:15px}
+.hacc-in ol b{color:var(--bone);font-weight:600}
+.hacc-in .flag{margin-top:16px;color:var(--amber)}
+.hacc-in .tlink{display:inline-block;margin-top:16px;color:var(--amber);margin-left:0}
+
 /* ============ 02 WHAT THIS FORMAT IS FOR ============ */
 .fmt{background:var(--bone);color:var(--ink);padding:124px 0}
 .fmt-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
@@ -614,6 +640,33 @@ footer .wrap{position:relative;z-index:2}
           <div><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Made in India</div>
         </div>
         <p class="ship-note">Ships within India. Delivery timelines and charges will be confirmed at launch.</p>
+        <div class="hacc" id="hacc">
+          <div class="hacc-item">
+            <button type="button" id="haccDescBtn" aria-expanded="false" aria-controls="haccDesc">Description<span class="pm" aria-hidden="true"></span></button>
+            <div class="hacc-body" id="haccDesc" role="region" aria-labelledby="haccDescBtn"><div><div class="hacc-in">
+              <p>Created for massage, our Pain Relief Oil helps support daily care for tired muscles and joints while complementing your recovery routine.</p>
+              <p>It is the slow format in the Pain Therapy Collection: warmed between the palms, worked in gently and given the time a tired body asks for. Formulated from decades of Ayurvedic clinical practice and manufactured in licensed AYUSH GMP-certified facilities.</p>
+              <dl>
+                <dt>Format</dt><dd>Massage oil</dd>
+                <dt>Best suited for</dt><dd>Joint discomfort, muscle stiffness, recovery after physical activity, daily self-massage and long-standing aches</dd>
+                <dt>Net quantity</dt><dd>To be confirmed</dd>
+              </dl>
+            </div></div></div>
+          </div>
+          <div class="hacc-item">
+            <button type="button" id="haccUseBtn" aria-expanded="false" aria-controls="haccUse">How to use<span class="pm" aria-hidden="true"></span></button>
+            <div class="hacc-body" id="haccUse" role="region" aria-labelledby="haccUseBtn"><div><div class="hacc-in">
+              <ol>
+                <li><span><b>Warm.</b> Pour a little into your palm and rub your hands together to warm it.</span></li>
+                <li><span><b>Apply.</b> Spread it over the area that needs care.</span></li>
+                <li><span><b>Massage.</b> Work it in with slow, steady strokes. Take your time.</span></li>
+                <li><span><b>Rest.</b> Let it settle. Give the ritual a few quiet minutes.</span></li>
+              </ol>
+              <span class="flag">Draft &middot; final directions follow the approved label</span><br>
+              <a href="#howto" class="tlink">See the full ritual &darr;</a>
+            </div></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -923,6 +976,9 @@ showG(0);
 // swipe on main image (mobile)
 let sx=null;gMain.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
 gMain.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)showG((gi+(dx<0?1:-1)+GALLERY.length)%GALLERY.length);sx=null;});
+
+// Hero accordion
+$$('.hacc-item').forEach(it=>{const b=it.querySelector('button');b.addEventListener('click',()=>{const o=it.classList.toggle('open');b.setAttribute('aria-expanded',o);});});
 
 // Quantity + Add to bag
 let qv=1,cart=0;
