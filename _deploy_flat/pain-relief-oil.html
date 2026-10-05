@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pain Relief Oil | Dr. D'Souza's</title>
+<meta name="description" content="Pain Relief Oil by Dr. D'Souza's. Traditional Ayurvedic massage for deeper comfort, from a practice rooted in clinical Ayurveda since 1998.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* =====================================================================
+   Dr. D'Souza's | Product Detail Page (PDP) v1
+   Built on the homepage v12 design system: same tokens, type, motion.
+   Flow follows the Master Creative, UX & Execution Brief, Section 7.
+   ===================================================================== */
+:root{
+  --bone:#F3EBDD; --bone-2:#EFE4D0; --cream:#F7F0E4;
+  --choc:#271611; --choc-2:#3A2318; --choc-soft:#4A2E20; --deep:#1C0F0B;
+  --clay:#B4562F; --clay-2:#C4663B;
+  --amber:#E0912F; --amber-2:#EDA23C;
+  --ink:#271611; --muted:#7C6A5C;
+  --font-brand:'Inter',system-ui,sans-serif;
+  --font-serif:'Fraunces',Georgia,serif;
+  --font-sans:'Inter',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  color-scheme:dark;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);color:var(--ink);background:var(--choc);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+section{position:relative}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px}
+.eyebrow{font-family:var(--font-brand);text-transform:uppercase;letter-spacing:.28em;font-size:12px;font-weight:600}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+
+/* pending / draft markers (client review) */
+.flag{display:inline-flex;align-items:center;gap:8px;max-width:100%;font-family:var(--font-sans);font-size:10.5px;font-weight:600;letter-spacing:.16em;line-height:1.5;text-transform:uppercase;padding:6px 12px;border-radius:20px;border:1px dashed currentColor;opacity:.75;text-align:left}
+.flag::before{flex:0 0 6px}
+h1,h2,h3{text-wrap:balance}
+.flag::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.shot{position:absolute;left:14px;bottom:14px;z-index:3;font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:rgba(247,240,228,.85);background:rgba(28,15,11,.55);backdrop-filter:blur(6px);border:1px solid rgba(247,240,228,.25);padding:6px 11px;border-radius:20px;pointer-events:none}
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--choc-2),var(--clay) 130%);display:flex;align-items:center;justify-content:center}
+.ph .glyph{font-family:var(--font-serif);font-weight:300;color:rgba(247,240,228,.18);font-size:64px;line-height:1}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--font-sans);font-weight:600;font-size:13.5px;letter-spacing:.14em;text-transform:uppercase;padding:16px 30px;border-radius:40px;cursor:pointer;border:none;transition:.35s var(--ease);white-space:nowrap}
+.btn-amber{background:var(--amber);color:var(--choc);position:relative;overflow:hidden}
+.btn-amber:hover{background:var(--amber-2);transform:translateY(-2px)}
+.btn-amber::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.4),transparent 70%);transform:translateX(-130%);transition:transform .7s var(--ease)}
+.btn-amber:hover::after{transform:translateX(130%)}
+.btn-ghost{background:transparent;border:1.5px solid currentColor}
+.btn-ghost:hover{background:var(--bone);color:var(--choc);border-color:var(--bone)}
+.btn-dark{background:var(--choc);color:var(--bone)}
+.btn-dark:hover{background:var(--choc-2);transform:translateY(-2px)}
+.tlink{font-family:var(--font-sans);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:3px;transition:.25s}
+.tlink:hover{color:var(--amber)}
+
+/* ============ NAV (homepage) ============ */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:.4s var(--ease);padding:20px 0;padding-top:calc(20px + env(safe-area-inset-top,0px))}
+nav .wrap{display:flex;align-items:center;justify-content:space-between}
+nav.solid{background:rgba(39,22,17,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:12px 0;box-shadow:0 1px 0 rgba(247,240,228,.08)}
+.nav-logo img{height:46px;width:auto;transition:.4s var(--ease)}
+nav.solid .nav-logo img{height:38px}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--bone);font-weight:500;opacity:.9;transition:.25s}
+.nav-links a:hover,.nav-links a.cur{opacity:1;color:var(--amber)}
+.nav-cta{font-size:11.5px!important;border:1.4px solid rgba(243,235,221,.5);padding:11px 20px;border-radius:30px}
+.nav-cta:hover{background:var(--amber);border-color:var(--amber);color:var(--choc)!important}
+.nav-icons{display:flex;gap:20px;align-items:center}
+.nav-icons svg{width:19px;height:19px;stroke:var(--bone);fill:none;stroke-width:1.6;cursor:pointer}
+.cart{position:relative;display:inline-flex}
+.cart-count{position:absolute;top:-7px;right:-9px;background:var(--amber);color:var(--choc);font-style:normal;font-size:9px;font-weight:700;min-width:15px;height:15px;padding:0 3px;border-radius:9px;display:flex;align-items:center;justify-content:center;transition:transform .3s var(--ease)}
+.cart-count.bump{transform:scale(1.45)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:24px;height:2px;background:var(--bone)}
+.mobmenu{position:fixed;inset:0;background:var(--choc);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transform:translateY(-100%);transition:.5s var(--ease)}
+.mobmenu.open{transform:none}
+.mobmenu a{font-family:var(--font-serif);font-size:26px;color:var(--bone)}
+.mobmenu .close{position:absolute;top:26px;right:26px;font-size:30px;color:var(--bone);cursor:pointer}
+
+/* ============ 01 PRODUCT HERO ============ */
+.pdp-hero{background:radial-gradient(120% 90% at 30% 0%,#3A2318 0%,#271611 55%,#1c0f0b 100%);color:var(--bone);padding:132px 0 96px;overflow:hidden}
+.pdp-hero .halo{position:absolute;width:62vw;height:62vw;max-width:760px;max-height:760px;border-radius:50%;background:radial-gradient(circle,rgba(224,145,47,.16),transparent 62%);top:52%;left:28%;transform:translate(-50%,-50%);pointer-events:none}
+.mural-corner{position:absolute;top:0;right:0;width:170px;opacity:.4;z-index:0;pointer-events:none;transform:scaleX(-1)}
+.crumbs{position:relative;z-index:2;display:flex;gap:10px;align-items:center;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,235,221,.55);margin-bottom:34px;flex-wrap:wrap}
+.crumbs a:hover{color:var(--amber)}
+.crumbs .cur{color:var(--bone)}
+.pdp-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr 1fr;gap:72px;align-items:start}
+/* gallery */
+.gallery{position:sticky;top:96px}
+.g-main{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;background:var(--deep);box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
+.g-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.03);transition:opacity .6s var(--ease),transform 1.2s var(--ease)}
+.g-main img.on{opacity:1;transform:none}
+.g-main img.contain{object-fit:contain;background:#241510}
+.g-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:14px}
+.g-thumb{aspect-ratio:1;border-radius:12px;overflow:hidden;border:1.5px solid rgba(243,235,221,.14);opacity:.62;transition:.3s var(--ease);background:var(--deep)}
+.g-thumb img{width:100%;height:100%;object-fit:cover}
+.g-thumb:hover{opacity:.9}
+.g-thumb.on{opacity:1;border-color:var(--amber)}
+.g-dots{display:none}
+/* mobile-only title above the gallery */
+.m-title{display:none}
+.m-title .tagrow{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.m-title .h1{font-family:var(--font-serif);font-weight:300;font-size:40px;line-height:1.04;letter-spacing:-.01em}
+/* buy box */
+.buy{padding-top:6px}
+.buy .tagrow{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:22px}
+.seg-tag{font-family:var(--font-brand);font-weight:600;letter-spacing:.2em;font-size:12px;color:var(--choc);background:var(--amber);padding:7px 14px;border-radius:30px;text-transform:uppercase}
+.coll{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(243,235,221,.6);font-weight:600}
+.buy h1{font-family:var(--font-serif);font-weight:300;font-size:clamp(40px,5vw,68px);line-height:1.02;letter-spacing:-.01em;margin-bottom:16px}
+.buy .lead{font-family:var(--font-serif);font-style:italic;font-weight:300;color:var(--amber);font-size:clamp(20px,2vw,24px);line-height:1.35;margin-bottom:22px}
+.buy .desc{font-size:16px;line-height:1.7;color:rgba(243,235,221,.76);max-width:470px;margin-bottom:30px}
+.pricebox{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-top:1px solid rgba(243,235,221,.14);border-bottom:1px solid rgba(243,235,221,.14);padding:22px 0;margin-bottom:24px;flex-wrap:wrap}
+.price{font-family:var(--font-serif);font-weight:400;font-size:30px;line-height:1}
+.price small{display:block;font-family:var(--font-sans);font-size:12px;letter-spacing:.04em;color:rgba(243,235,221,.55);margin-top:9px;font-weight:400}
+.opt-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(243,235,221,.6);font-weight:600;margin-bottom:10px}
+.size-chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;padding:11px 18px;border-radius:30px;border:1.4px dashed rgba(243,235,221,.4);color:rgba(243,235,221,.8)}
+.buyrow{display:flex;gap:14px;align-items:stretch;margin-bottom:16px}
+.qty{display:flex;align-items:center;border:1.4px solid rgba(243,235,221,.3);border-radius:40px;padding:0 6px}
+.qty button{width:38px;height:100%;min-height:48px;font-size:20px;color:var(--bone);opacity:.8}
+.qty button:hover{opacity:1;color:var(--amber)}
+.qty output{min-width:26px;text-align:center;font-weight:600;font-size:15px}
+.buyrow .btn-amber{flex:1}
+.compare-link{display:inline-flex;gap:8px;align-items:center;font-size:13.5px;color:rgba(243,235,221,.75);margin-top:6px}
+.compare-link b{color:var(--amber);font-weight:600;border-bottom:1px solid rgba(224,145,47,.5)}
+.mini-trust{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin-top:34px;padding:22px;border:1px solid rgba(243,235,221,.12);border-radius:16px;background:linear-gradient(120deg,rgba(58,35,24,.45),transparent)}
+.mini-trust div{display:flex;gap:11px;align-items:center;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;line-height:1.35}
+.mini-trust svg{width:22px;height:22px;flex:0 0 22px;stroke:var(--amber);fill:none;stroke-width:1.5}
+.ship-note{font-size:12.5px;color:rgba(243,235,221,.5);margin-top:16px;line-height:1.6}
+
+/* ============ 02 WHAT THIS FORMAT IS FOR ============ */
+.fmt{background:var(--bone);color:var(--ink);padding:124px 0}
+.fmt-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.fmt .eyebrow{color:var(--clay)}
+.fmt h2{font-family:var(--font-serif);font-weight:300;font-size:clamp(32px,4.4vw,56px);line-height:1.06;margin:18px 0 26px}
+.fmt h2 em{font-style:italic;color:var(--clay)}
+.fmt p{font-size:17px;line-height:1.75;color:var(--muted);max-width:480px}
+.fmt p+p{margin-top:16px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;border-top:1px solid rgba(39,22,17,.14)}
+.facts div{padding:20px 18px 0 0}
+.facts div+div{padding-left:18px;border-left:1px solid rgba(39,22,17,.14)}
+.facts span{display:block;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);font-weight:600;margin-bottom:8px}
+.facts b{font-family:var(--font-serif);font-weight:400;font-size:20px;line-height:1.2}
+.fmt-visual{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;box-shadow:0 44px 84px -30px rgba(39,22,17,.5)}
+.fmt-visual img{width:100%;height:100%;object-fit:cover}
+.fmt-visual .inset{position:absolute;right:-1px;bottom:-1px;width:42%;aspect-ratio:1;border-radius:16px 0 0 0;overflow:hidden;border-top:6px solid var(--bone);border-left:6px solid var(--bone)}
+.fmt-visual .inset img{width:100%;height:100%;object-fit:cover}
+
+/* ============ 03 WHEN TO REACH FOR IT (scroll-controlled, homepage "day hurt") ============ */
+.hurt{background:linear-gradient(170deg,#5a2e1e 0%,#3a201a 70%);color:var(--bone)}
+.hurt-head{text-align:center;max-width:760px;margin:0 auto;padding:124px 24px 70px}
+.hurt-head .eyebrow{display:block;color:var(--amber);margin-bottom:18px}
+.hurt-head h2{font-family:var(--font-serif);font-size:clamp(30px,4.4vw,54px);font-weight:300;margin:0 auto 14px;line-height:1.08}
+.hurt-head p{color:rgba(243,235,221,.62);max-width:460px;margin:0 auto;line-height:1.6}
+.hurt-track{position:relative}
+.hurt-sticky{position:sticky;top:0;height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;overflow:hidden}
+.hurt-visual{height:100vh;position:relative;overflow:hidden;background:linear-gradient(160deg,#3A2318,#B4562F 150%)}
+.hurt-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s var(--ease)}
+.hurt-img.on{opacity:.62}
+.hurt-shade{position:absolute;inset:0;z-index:1;background:linear-gradient(160deg,rgba(90,46,30,.35),rgba(39,22,17,.5))}
+.hurt-clock{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:clamp(190px,23vw,300px);z-index:2}
+.clockface{width:100%;height:auto;display:block;filter:drop-shadow(0 12px 34px rgba(0,0,0,.4))}
+.cf-ring{fill:rgba(39,22,17,.18);stroke:rgba(247,240,228,.5);stroke-width:1.5}
+.cf-ticks line{stroke:rgba(247,240,228,.55);stroke-width:2;stroke-linecap:round}
+.cf-hour,.cf-min{stroke:var(--bone);stroke-linecap:round;transform-box:view-box;transform-origin:100px 100px;transition:transform .9s var(--ease)}
+.cf-hour{stroke-width:5}.cf-min{stroke-width:3}
+.cf-cap{fill:var(--amber)}
+.hurt-emerge{position:absolute;bottom:9%;right:8%;width:170px;z-index:4;opacity:0;transform:translateY(38px) scale(.94);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.hurt-emerge.in{opacity:1;transform:none}
+.hurt-emerge img{width:100%;border-radius:14px;box-shadow:0 34px 60px -22px rgba(0,0,0,.7)}
+.hurt-body{position:relative;height:100%;display:flex;align-items:center}
+.hurt-step{position:absolute;left:8vw;right:8vw;max-width:500px;top:50%;transform:translateY(-50%);opacity:0;transition:opacity .5s var(--ease);pointer-events:none}
+.hurt-step.active{opacity:1;pointer-events:auto}
+.hurt-step .time{text-transform:uppercase;font-family:var(--font-brand);letter-spacing:.24em;color:var(--amber);font-size:16px;font-weight:600;margin-bottom:18px}
+.hurt-step h3{font-family:var(--font-serif);font-size:clamp(30px,3.8vw,46px);font-weight:300;margin:0 0 20px;line-height:1.1}
+.hurt-step .ctx{color:rgba(243,235,221,.66);font-size:17px;line-height:1.6;margin-bottom:34px}
+.hurt-step .prod{font-family:var(--font-brand);letter-spacing:.16em;font-size:12px;color:rgba(243,235,221,.7);text-transform:uppercase;font-weight:600;border-top:1px solid rgba(243,235,221,.2);padding-top:22px}
+.hurt-step .prod b{display:block;font-family:var(--font-serif);font-size:24px;letter-spacing:0;text-transform:none;font-weight:400;margin-top:10px;color:var(--bone)}
+.hurt-progress{position:absolute;right:34px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px;z-index:5}
+.hurt-progress i{width:8px;height:8px;border-radius:50%;background:rgba(243,235,221,.25);transition:.3s}
+.hurt-progress i.on{background:var(--amber);transform:scale(1.4)}
+
+/* ============ 04 HOW TO USE ============ */
+.howto{background:var(--bone);color:var(--ink);padding:124px 0}
+.sec-head{text-align:center;max-width:720px;margin:0 auto 64px}
+.sec-head .eyebrow{color:var(--clay)}
+.sec-head h2{font-family:var(--font-serif);font-weight:300;font-size:clamp(30px,4.4vw,54px);line-height:1.08;margin:16px 0 0}
+.sec-head p{color:var(--muted);font-size:16px;line-height:1.65;margin:16px auto 0;max-width:520px}
+.sec-head .flag{margin-top:22px;color:var(--clay)}
+.steps{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:34px}
+.steps-line{position:absolute;top:34px;left:6%;right:6%;height:2px;background:rgba(180,86,47,.16);border-radius:2px}
+.steps-line i{position:absolute;left:0;top:0;height:100%;width:0;background:var(--clay);border-radius:2px;transition:width 1.6s var(--ease)}
+.steps.in .steps-line i{width:100%}
+.step{position:relative;text-align:center;padding:0 6px}
+.step .n{width:70px;height:70px;margin:0 auto 26px;border-radius:50%;background:var(--bone);border:2px solid var(--clay);display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-size:24px;font-weight:400;color:var(--clay);position:relative;z-index:1;transition:.5s var(--ease)}
+.steps.in .step .n{background:var(--clay);color:var(--bone)}
+.steps.in .step:nth-child(3) .n{transition-delay:.3s}.steps.in .step:nth-child(4) .n{transition-delay:.7s}.steps.in .step:nth-child(5) .n{transition-delay:1.1s}
+.step h3{font-family:var(--font-serif);font-weight:400;font-size:24px;margin-bottom:10px}
+.step p{font-size:15px;line-height:1.6;color:var(--muted);max-width:230px;margin:0 auto}
+.howto-note{display:flex;gap:14px;align-items:center;justify-content:center;margin:64px auto 0;max-width:720px;padding:20px 26px;border-radius:16px;background:var(--cream);border:1px solid rgba(39,22,17,.08);font-size:13.5px;color:var(--choc-soft);line-height:1.55}
+.howto-note svg{width:24px;height:24px;flex:0 0 24px;stroke:var(--clay);fill:none;stroke-width:1.5}
+
+/* ============ 05 TEXTURE / APPLICATION FILM ============ */
+.film{position:relative;height:min(92vh,56.25vw);min-height:520px;overflow:hidden;background:var(--deep)}
+.film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.film-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(28,15,11,.55),transparent 40%);pointer-events:none}
+.film-cap{position:absolute;left:0;right:0;bottom:34px;z-index:2}
+.film-cap .wrap{display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.film-cap .eyebrow{color:var(--amber)}
+.film-cap span.note{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,240,228,.6);border:1px solid rgba(247,240,228,.28);padding:6px 12px;border-radius:20px}
+
+/* ============ 06 INGREDIENTS ============ */
+.ingredients{background:var(--choc);color:var(--bone);padding:124px 0 112px;overflow:hidden}
+.ing-head{text-align:center;max-width:780px;margin:0 auto 60px}
+.ing-head .eyebrow{display:block;color:var(--amber);margin-bottom:20px}
+.ing-head h2{font-family:var(--font-serif);font-size:clamp(28px,4vw,50px);font-weight:300;line-height:1.16}
+.ing-head .flag{margin-top:24px;color:rgba(243,235,221,.8)}
+.ing-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1080px;margin:0 auto}
+.ing-card{display:grid;grid-template-columns:170px 1fr;gap:28px;align-items:start;padding:28px;border:1px solid rgba(243,235,221,.13);border-radius:22px;background:linear-gradient(120deg,rgba(58,35,24,.5),transparent);transition:.4s var(--ease)}
+.ing-card:hover{border-color:rgba(224,145,47,.35)}
+.ing-visual{aspect-ratio:1;border-radius:16px;overflow:hidden}
+.ing-visual img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.ing-card:hover .ing-visual img{transform:scale(1.05)}
+.ing-card .name{font-family:var(--font-brand);font-weight:700;font-size:24px;letter-spacing:.06em}
+.ing-card .botanical{font-family:var(--font-serif);font-style:italic;color:var(--amber);font-size:17px;margin:4px 0 16px}
+.ing-card dl{display:grid;gap:12px}
+.ing-card dt{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(243,235,221,.5);font-weight:600;margin-bottom:3px}
+.ing-card dd{font-size:14.5px;line-height:1.6;color:rgba(243,235,221,.78)}
+.principle{max-width:820px;margin:72px auto 0;text-align:center}
+.principle p{font-family:var(--font-serif);font-style:italic;font-weight:300;font-size:clamp(22px,2.6vw,32px);line-height:1.4;color:var(--bone)}
+.principle .tlink{display:inline-block;margin-top:26px;color:var(--amber)}
+
+/* ============ 07 WHY DR. D'SOUZA CREATED IT ============ */
+.doctor{background:var(--choc-2);color:var(--bone);display:grid;grid-template-columns:1fr 1fr;min-height:82vh}
+.doctor-photo{position:relative;overflow:hidden;min-height:60vh}
+.doctor-photo img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.doctor-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(39,22,17,.04),rgba(39,22,17,.45));pointer-events:none}
+.doctor-photo .frame-note{position:absolute;left:22px;bottom:20px;z-index:2;letter-spacing:.14em;text-transform:uppercase;font-size:10px;color:rgba(243,235,221,.85);font-weight:600}
+.doctor-text{display:flex;flex-direction:column;justify-content:center;padding:10vh 7vw}
+.doctor-text .eyebrow{color:var(--amber);margin-bottom:22px}
+.doctor-text h2{font-family:var(--font-serif);font-size:clamp(32px,4vw,52px);font-weight:300;line-height:1.08;margin-bottom:26px}
+.doctor-text h2 em{font-style:italic;color:var(--amber)}
+.doctor-text p{font-size:16px;line-height:1.75;color:rgba(243,235,221,.78);max-width:470px}
+.doctor-text p+p{margin-top:16px}
+.sig{margin:34px 0 30px;padding-top:24px;border-top:1px solid rgba(243,235,221,.16);max-width:470px}
+.sig b{display:block;font-family:var(--font-serif);font-weight:400;font-size:26px;margin-bottom:6px}
+.sig .role{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,235,221,.7);font-weight:600;margin-bottom:8px}
+.sig .creds{font-size:12.5px;color:rgba(243,235,221,.58);line-height:1.55}
+
+/* ============ 08 WHO THIS FORMAT FITS ============ */
+.fits{background:var(--bone);color:var(--ink);padding:124px 0}
+.fits-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+.fits .eyebrow{color:var(--clay)}
+.fits h2{font-family:var(--font-serif);font-weight:300;font-size:clamp(30px,4.2vw,52px);line-height:1.08;margin:16px 0 22px}
+.fits .intro{font-size:16.5px;line-height:1.7;color:var(--muted);max-width:420px}
+.fits-side{position:sticky;top:120px}
+.fits-side .btn{margin-top:32px}
+.fit-list{list-style:none;border-top:1px solid rgba(39,22,17,.14)}
+.fit-list li{display:grid;grid-template-columns:54px 1fr auto;gap:18px;align-items:center;padding:28px 0;border-bottom:1px solid rgba(39,22,17,.14)}
+.fit-list .ix{font-family:var(--font-serif);font-size:15px;color:var(--clay)}
+.fit-list .t{font-family:var(--font-serif);font-weight:300;font-size:clamp(22px,2.6vw,32px);line-height:1.15}
+.fit-list svg{width:26px;height:26px;stroke:var(--clay);fill:none;stroke-width:1.5}
+
+/* ============ 09 COMPARISON (amber = discovery) ============ */
+.compare{background:var(--amber);color:var(--choc);padding:124px 0;overflow:hidden}
+.compare .boat{position:absolute;bottom:0;left:0;width:100%;opacity:.12;pointer-events:none}
+.compare .wrap{position:relative;z-index:2}
+.compare .sec-head .eyebrow{color:var(--choc)}
+.compare .sec-head p{color:var(--choc-soft)}
+.matcher{max-width:980px;margin:0 auto 46px;text-align:center}
+.matcher .opt-label{color:var(--choc-soft);margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.chip{font-size:13.5px;font-weight:500;padding:12px 20px;border-radius:30px;border:1.4px solid rgba(39,22,17,.25);transition:.3s var(--ease)}
+.chip:hover{border-color:var(--choc)}
+.chip.on{background:var(--choc);color:var(--bone);border-color:var(--choc)}
+.rec{margin-top:22px;font-family:var(--font-serif);font-size:clamp(20px,2.2vw,26px);font-weight:300;min-height:1.4em}
+.rec b{font-weight:500}
+.fmt-row{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.fcard{position:relative;background:var(--cream);border-radius:18px;overflow:hidden;border:1.5px solid transparent;transition:.45s var(--ease);display:flex;flex-direction:column}
+.fcard:hover{transform:translateY(-6px);box-shadow:0 24px 50px -26px rgba(39,22,17,.45)}
+.fcard .fimg{position:relative;aspect-ratio:3/4;overflow:hidden;background:radial-gradient(120% 90% at 50% 30%,#3a2318,#271611 80%)}
+.fcard .fimg img{width:100%;height:100%;object-fit:cover}
+.fcard .fimg .ph{position:absolute;inset:0}
+.fbadge{position:absolute;top:12px;left:12px;z-index:3;font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:var(--choc);color:var(--bone);padding:5px 10px;border-radius:20px}
+.fbody{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.fcat{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);font-weight:600;margin-bottom:7px}
+.fbody h3{font-family:var(--font-serif);font-weight:400;font-size:20px;line-height:1.2;margin-bottom:8px}
+.fbody .tl{font-size:13px;line-height:1.5;color:var(--muted);margin-bottom:14px}
+.fbody .when{margin-top:auto;padding-top:14px;border-top:1px solid rgba(39,22,17,.12);font-size:12px;line-height:1.45;color:var(--choc-soft)}
+.fbody .when span{display:block;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:4px}
+.fcard.here{background:var(--choc);color:var(--bone)}
+.fcard.here .fbody .tl,.fcard.here .fbody .when{color:rgba(243,235,221,.72)}
+.fcard.here .fbody .when{border-color:rgba(243,235,221,.16)}
+.fcard.here .fbody .when span{color:rgba(243,235,221,.5)}
+.fcard.here .fcat{color:var(--amber)}
+.fcard.here .fbadge{background:var(--amber);color:var(--choc)}
+.fcard.match{border-color:var(--choc);transform:translateY(-8px);box-shadow:0 30px 60px -28px rgba(39,22,17,.55)}
+.fcard .view{display:inline-block;margin-top:12px;font-size:11px;letter-spacing:.12em;font-weight:600;color:var(--clay);text-transform:uppercase}
+.fcard.here .view{color:var(--amber)}
+.compare-note{text-align:center;margin-top:34px;font-size:12px;font-style:italic;color:var(--choc-soft)}
+
+/* ============ 10 PHILOSOPHY + MEDICAL ADVICE ============ */
+.advice{background:var(--choc);color:var(--bone);padding:124px 0}
+.advice-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.advice .eyebrow{color:var(--amber)}
+.advice h2{font-family:var(--font-serif);font-weight:300;font-size:clamp(28px,3.6vw,46px);line-height:1.15;margin:18px 0 24px}
+.advice h2 em{font-style:italic;color:var(--amber)}
+.advice .lede{font-size:16px;line-height:1.75;color:rgba(243,235,221,.72);max-width:470px}
+.advice-card{border:1px solid rgba(243,235,221,.14);border-radius:22px;padding:40px;background:linear-gradient(140deg,rgba(58,35,24,.55),transparent)}
+.advice-card h3{font-family:var(--font-serif);font-weight:400;font-size:26px;margin-bottom:8px}
+.advice-card .if{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);font-weight:600;margin:22px 0 10px}
+.advice-card ul{list-style:none}
+.advice-card li{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-bottom:1px solid rgba(243,235,221,.1);font-size:15.5px;line-height:1.5;color:rgba(243,235,221,.86)}
+.advice-card li::before{content:"";flex:0 0 7px;height:7px;border-radius:50%;background:var(--amber);margin-top:8px}
+.advice-card .close{font-size:14.5px;line-height:1.7;color:rgba(243,235,221,.7);margin-top:24px}
+.advice-card .consult-link{display:inline-block;margin-top:20px}
+.consult-link{color:var(--amber);border-bottom:1px solid rgba(224,145,47,.5);transition:.25s}
+.consult-link:hover{color:var(--amber-2);border-color:var(--amber-2)}
+
+/* ============ 11 FAQS ============ */
+.faq{background:var(--bone);color:var(--ink);padding:124px 0}
+.faq-list{max-width:860px;margin:0 auto;border-top:1px solid rgba(39,22,17,.14)}
+.qa{border-bottom:1px solid rgba(39,22,17,.14)}
+.qa button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:24px;text-align:left;padding:26px 0;font-family:var(--font-serif);font-weight:400;font-size:clamp(19px,2vw,23px);line-height:1.3;color:var(--ink)}
+.qa button:hover{color:var(--clay)}
+.qa .pm{position:relative;flex:0 0 30px;width:30px;height:30px;border-radius:50%;border:1.4px solid rgba(39,22,17,.25);transition:.4s var(--ease)}
+.qa .pm::before,.qa .pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.6px;background:currentColor;transform:translate(-50%,-50%);transition:.4s var(--ease)}
+.qa .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.qa.open .pm{background:var(--clay);border-color:var(--clay);color:var(--bone)}
+.qa.open .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.qa .ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.qa.open .ans{grid-template-rows:1fr}
+.qa .ans>div{overflow:hidden}
+.qa .ans p{padding:0 54px 28px 0;font-size:15.5px;line-height:1.75;color:var(--muted)}
+.qa .tbc{display:inline-block;margin-left:8px;font-family:var(--font-sans);font-size:9.5px;letter-spacing:.14em;font-weight:600;color:var(--clay);border:1px dashed var(--clay);padding:3px 7px;border-radius:12px;vertical-align:middle}
+
+/* ============ 12 REVIEWS ============ */
+.reviews{background:var(--choc);color:var(--bone);padding:124px 0;overflow:hidden}
+.cert-corner{position:absolute;top:0;left:0;width:150px;opacity:.35;pointer-events:none}
+.rev-grid{position:relative;z-index:2;display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}
+.reviews .eyebrow{color:var(--amber)}
+.reviews h2{font-family:var(--font-serif);font-weight:300;font-size:clamp(30px,4vw,50px);line-height:1.1;margin:16px 0 22px}
+.reviews p.lede{font-size:16px;line-height:1.75;color:rgba(243,235,221,.7);max-width:440px}
+.rev-proof{display:flex;gap:30px;margin-top:34px;flex-wrap:wrap}
+.rev-proof div{border-left:2px solid var(--amber);padding-left:16px}
+.rev-proof b{display:block;font-family:var(--font-serif);font-weight:400;font-size:28px;color:var(--amber)}
+.rev-proof span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(243,235,221,.6)}
+.slots{display:grid;gap:16px}
+.slot{border:1.4px dashed rgba(243,235,221,.22);border-radius:18px;padding:26px 28px}
+.slot .stars{display:flex;gap:5px;margin-bottom:16px}
+.slot .stars svg{width:16px;height:16px;fill:none;stroke:rgba(243,235,221,.35);stroke-width:1.4}
+.slot .bar{height:10px;border-radius:6px;background:rgba(243,235,221,.08);margin-bottom:10px}
+.slot .bar.s{width:62%}.slot .bar.m{width:84%}
+.slot .who{display:flex;justify-content:space-between;align-items:center;margin-top:18px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(243,235,221,.45);font-weight:600}
+
+/* ============ 13 JOURNAL ============ */
+.journal{background:var(--bone);color:var(--ink);padding:124px 0}
+.journal-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:46px;flex-wrap:wrap;gap:20px}
+.journal-head .eyebrow{color:var(--clay)}
+.journal-head h2{font-family:var(--font-serif);font-size:clamp(28px,3.6vw,46px);font-weight:300;margin-top:12px;line-height:1.1}
+.jgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.jcard{cursor:pointer}
+.jcard .jimg{aspect-ratio:4/3;border-radius:16px;margin-bottom:18px;overflow:hidden}
+.jcard .jimg img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.jcard:hover .jimg img{transform:scale(1.04)}
+.jcard .jcat{letter-spacing:.16em;font-size:10px;text-transform:uppercase;color:var(--clay);font-weight:600}
+.jcard h3{font-family:var(--font-serif);font-size:22px;font-weight:400;line-height:1.25;margin:10px 0 8px}
+.jcard p{font-size:14px;color:var(--muted);line-height:1.55}
+
+/* ============ CONSULT + FOOTER (homepage) ============ */
+.consult{background:var(--choc-2);padding:52px 24px;text-align:center;border-top:1px solid rgba(243,235,221,.08)}
+.consult p{max-width:760px;margin:0 auto;font-family:var(--font-serif);font-style:italic;font-size:clamp(16px,2vw,21px);line-height:1.6;color:rgba(243,235,221,.82)}
+.consult .consult-link{font-style:normal}
+footer{background:var(--choc);color:var(--bone);padding:110px 0 40px;text-align:center;overflow:hidden;position:relative}
+.foot-boat{position:absolute;top:0;left:0;width:100%;opacity:.1;pointer-events:none}
+footer .wrap{position:relative;z-index:2}
+.foot-sig{width:min(70vw,420px);margin:0 auto 26px;opacity:.95}
+.foot-line{font-family:var(--font-serif);font-size:clamp(22px,3vw,34px);font-weight:300;font-style:italic;margin-bottom:6px}
+.foot-nav{display:flex;justify-content:center;flex-wrap:wrap;margin:56px auto;gap:20px 46px;max-width:620px}
+.foot-nav a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,235,221,.82);transition:.25s}
+.foot-nav a:hover{color:var(--amber)}
+.foot-legal{border-top:1px solid rgba(243,235,221,.12);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:11.5px;color:rgba(243,235,221,.45)}
+.foot-legal a{margin-left:18px}
+.foot-unit{margin-top:22px;letter-spacing:.14em;font-size:12px;color:rgba(243,235,221,.7);text-transform:uppercase;font-weight:600}
+
+/* ============ STICKY PURCHASE BAR ============ */
+.sticky-buy{position:fixed;left:0;right:0;bottom:0;z-index:90;background:rgba(39,22,17,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid rgba(243,235,221,.1);color:var(--bone);transform:translateY(110%);transition:transform .5s var(--ease)}
+.sticky-buy.show{transform:none}
+.sticky-buy{padding-bottom:env(safe-area-inset-bottom,0px)}
+.sticky-buy .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px}
+.sb-thumb{width:48px;height:48px;border-radius:10px;overflow:hidden;flex:0 0 48px}
+.sb-thumb img{width:100%;height:100%;object-fit:cover}
+.sb-info{flex:1;min-width:0}
+.sb-info b{display:block;font-family:var(--font-serif);font-weight:400;font-size:19px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sb-info span{font-size:12px;color:rgba(243,235,221,.6)}
+.sb-tag{font-size:10.5px;letter-spacing:.18em;font-weight:600;color:var(--amber);text-transform:uppercase;margin-right:8px}
+.sticky-buy .btn{padding:14px 28px}
+.toast{position:fixed;top:92px;right:24px;z-index:150;background:var(--cream);color:var(--choc);padding:14px 20px;border-radius:14px;box-shadow:0 24px 50px -20px rgba(0,0,0,.5);font-size:14px;display:flex;gap:12px;align-items:center;transform:translateY(-14px);opacity:0;pointer-events:none;transition:.45s var(--ease)}
+.toast.show{transform:none;opacity:1}
+.toast i{width:22px;height:22px;border-radius:50%;background:var(--clay);display:flex;align-items:center;justify-content:center}
+.toast i svg{width:12px;height:12px;stroke:var(--bone);fill:none;stroke-width:2.4}
+.toast small{display:block;font-size:11px;color:var(--muted)}
+
+/* ===================================================================
+   RESPONSIVE (mobile-first rules, homepage breakpoints 900 / 768 / 420)
+   =================================================================== */
+@media(max-width:1100px){
+  .fmt-row{grid-template-columns:repeat(5,minmax(200px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 4px 22px;margin:0 -4px;scrollbar-width:none}
+  .fmt-row::-webkit-scrollbar{display:none}
+  .fcard{scroll-snap-align:start}
+}
+@media(max-width:900px){
+  .wrap{padding:0 22px}
+  .nav-links{display:none}
+  .burger{display:flex}
+  .nav-icons{gap:14px}
+  .pdp-grid{grid-template-columns:1fr;gap:40px}
+  .gallery{position:relative;top:0;max-width:560px;width:100%;margin:0 auto}
+  .pdp-grid{gap:28px}
+  .m-title{display:block;max-width:560px;width:100%;margin:0 auto}
+  .buy .tagrow,.buy h1{display:none}
+  .buy{max-width:560px;width:100%;margin:0 auto;padding-top:8px}
+  .fmt-grid,.advice-grid,.rev-grid,.fits-grid{grid-template-columns:1fr;gap:50px}
+  .fits-side{position:relative;top:0}
+  .fmt-visual{max-width:520px;width:100%;margin:0 auto}
+  .ing-grid{grid-template-columns:1fr;max-width:620px}
+  .steps{grid-template-columns:1fr 1fr;gap:46px 26px}
+  .steps-line{display:none}
+  .doctor{grid-template-columns:1fr;min-height:auto}
+  .doctor-photo{min-height:70vw}
+  .jgrid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
+}
+@media(max-width:768px){
+  nav{padding:14px 0}
+  nav.solid{padding:10px 0}
+  .nav-logo img{height:34px}
+  nav.solid .nav-logo img{height:32px}
+  .btn{padding:15px 26px;font-size:12.5px}
+  /* hero */
+  .pdp-hero{padding:96px 0 72px}
+  .crumbs{margin-bottom:20px;font-size:10.5px}
+  .mural-corner{width:110px}
+  .g-main{border-radius:18px}
+  .g-thumbs{grid-template-columns:repeat(5,64px);overflow-x:auto;gap:10px;scrollbar-width:none}
+  .buy h1{font-size:44px}
+  .buy .lead{font-size:20px}
+  .buy .desc{font-size:15.5px}
+  .price{font-size:26px}
+  .mini-trust{grid-template-columns:1fr 1fr;padding:18px;gap:14px 14px}
+  .mini-trust div{font-size:10px;letter-spacing:.08em;gap:9px}
+  .mini-trust svg{width:20px;height:20px;flex:0 0 20px}
+  /* sections */
+  .fmt,.howto,.fits,.compare,.advice,.faq,.reviews,.journal{padding:84px 0}
+  .ingredients{padding:84px 0 80px}
+  .sec-head{margin-bottom:46px}
+  .fmt p{font-size:16px}
+  .facts{grid-template-columns:1fr;border-top:none}
+  .facts div,.facts div+div{padding:16px 0;border-left:none;border-top:1px solid rgba(39,22,17,.14);display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+  .facts span{margin:0}
+  .facts b{font-size:18px;text-align:right}
+  /* when to reach (homepage mobile day-hurt pattern) */
+  .hurt-head{padding:76px 20px 30px}
+  .hurt-sticky{display:flex;flex-direction:column;height:100vh;grid-template-columns:none}
+  .hurt-visual{width:100%;height:42vh;flex:0 0 42vh}
+  .hurt-img.on{opacity:.92}
+  .hurt-shade{background:linear-gradient(180deg,rgba(39,22,17,.12),rgba(39,22,17,.45))}
+  .hurt-clock{width:140px;top:46%}
+  .hurt-emerge{width:92px;bottom:12px;right:14px}
+  .hurt-body{width:100%;flex:1 1 auto;padding:24px 22px}
+  .hurt-step{left:22px;right:22px;max-width:none}
+  .hurt-step .time{font-size:13px;margin-bottom:12px}
+  .hurt-step h3{font-size:28px;margin-bottom:12px}
+  .hurt-step .ctx{font-size:15px;margin-bottom:20px}
+  .hurt-step .prod{padding-top:16px;font-size:11px}
+  .hurt-step .prod b{font-size:20px;margin-top:6px}
+  .hurt-progress{right:12px;top:16px;transform:none}
+  /* how to */
+  .steps{grid-template-columns:1fr;gap:0;max-width:440px;margin:0 auto}
+  .step{display:grid;grid-template-columns:60px 1fr;gap:18px;text-align:left;padding:22px 0;border-top:1px solid rgba(39,22,17,.12)}
+  .step:nth-child(2){border-top:none}
+  .step .n{width:56px;height:56px;margin:0;font-size:20px}
+  .step h3{font-size:22px;margin:4px 0 6px}
+  .step p{margin:0;max-width:none}
+  .howto-note{margin-top:40px;flex-direction:column;text-align:center;padding:20px}
+  /* film: keep the full 16:9 frame on mobile, caption sits below */
+  .film{height:auto;min-height:0}
+  .film video{position:relative;aspect-ratio:16/9;height:auto}
+  .film-shade{display:none}
+  .film-cap{position:static;padding:16px 0 20px}
+  .film-cap .wrap{flex-direction:column;align-items:flex-start;gap:10px}
+  .film-cap span.note{font-size:9px;letter-spacing:.12em}
+  .flag{font-size:9.5px;letter-spacing:.1em;border-radius:14px;padding:7px 12px}
+  /* ingredients */
+  .ing-card{grid-template-columns:1fr;gap:20px;padding:20px}
+  .ing-visual{aspect-ratio:16/10}
+  .principle{margin-top:54px}
+  /* doctor */
+  .doctor-photo{min-height:86vw}
+  .doctor-text{padding:52px 22px 64px}
+  .doctor-text h2{font-size:32px}
+  /* fits */
+  .fit-list li{grid-template-columns:40px 1fr auto;padding:22px 0;gap:12px}
+  .fit-list .t{font-size:22px}
+  /* compare */
+  .chips{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding-bottom:6px;scrollbar-width:none;margin:0 -22px;padding-left:22px;padding-right:22px}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;font-size:13px;padding:11px 16px}
+  .fmt-row{grid-template-columns:repeat(5,72%);gap:14px;margin:0 -22px;padding:12px 22px 24px;scroll-padding:0 22px}
+  /* advice */
+  .advice-card{padding:28px 22px}
+  /* faq */
+  .qa button{padding:22px 0;font-size:19px}
+  .qa .ans p{padding-right:0}
+  /* reviews */
+  .rev-proof{gap:22px}
+  /* journal */
+  .journal-head{margin-bottom:34px}
+  /* footer */
+  .consult{padding:44px 22px}
+  .foot-nav{margin:44px auto;gap:18px 26px}
+  .foot-legal{flex-direction:column;text-align:center;gap:12px}
+  .foot-legal a{margin:0 9px}
+  footer{padding-bottom:110px}
+  /* sticky bar */
+  .sticky-buy .wrap{gap:12px;padding-top:10px;padding-bottom:10px}
+  .sb-thumb{width:42px;height:42px;flex-basis:42px}
+  .sb-info b{font-size:16px}
+  .sb-tag{display:none}
+  .sticky-buy .btn{padding:13px 20px;font-size:11.5px}
+  .toast{left:16px;right:16px;top:auto;bottom:86px}
+}
+@media(max-width:420px){
+  .buy h1{font-size:38px}
+  .buyrow{flex-direction:column}
+  .qty{align-self:flex-start}
+  .mini-trust{grid-template-columns:1fr}
+  .doctor-text h2{font-size:28px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV (homepage) -->
+<nav id="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-logo"><img src="assets/logo_white_nav.png" alt="Dr. D'Souza's"></a>
+    <div class="nav-links">
+      <a href="index.html#shop" class="cur">Shop</a>
+      <a href="index.html#quiz">Find Your Therapy</a>
+      <a href="index.html#heritage">Our Story</a>
+      <a href="index.html#ingredients">Ingredients</a>
+      <a href="index.html#journal">Journal</a>
+      <a href="index.html#shop" class="nav-cta">Shop the Range</a>
+    </div>
+    <div class="nav-icons">
+      <svg viewBox="0 0 24 24" aria-label="Search"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      <span class="cart" aria-label="Bag"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><i class="cart-count" id="cartCount">0</i></span>
+      <div class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+<div class="mobmenu" id="mobmenu">
+  <span class="close" id="mobclose">&times;</span>
+  <a href="index.html#shop">Shop</a>
+  <a href="index.html#quiz">Find Your Therapy</a>
+  <a href="index.html#heritage">Our Story</a>
+  <a href="index.html#ingredients">Ingredients</a>
+  <a href="index.html#journal">Journal</a>
+</div>
+
+<!-- 01 PRODUCT HERO -->
+<section class="pdp-hero" id="top">
+  <img class="mural-corner" src="assets/mural/mural_corner.png" alt="">
+  <div class="halo"></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html#shop">Shop</a><span>/</span><a href="#">Pain Therapy</a><span>/</span><span class="cur">Pain Relief Oil</span></div>
+    <div class="pdp-grid">
+      <div class="m-title"><div class="tagrow"><span class="seg-tag">Massage</span><span class="coll">Pain Therapy Collection</span></div><div class="h1">Pain Relief Oil</div></div>
+      <div class="gallery">
+        <div class="g-main" id="gMain"></div>
+        <div class="g-thumbs" id="gThumbs"></div>
+      </div>
+      <div class="buy">
+        <div class="tagrow"><span class="seg-tag">Massage</span><span class="coll">Pain Therapy Collection</span></div>
+        <h1>Pain Relief Oil</h1>
+        <div class="lead">Traditional Ayurvedic massage for deeper comfort.</div>
+        <p class="desc">Created for massage, our Pain Relief Oil helps support daily care for tired muscles and joints while complementing your recovery routine.</p>
+        <div class="pricebox">
+          <div class="price">Price on confirmation<small>Inclusive of all taxes</small></div>
+          <div>
+            <div class="opt-label">Net quantity</div>
+            <span class="size-chip">To be confirmed</span>
+          </div>
+        </div>
+        <div class="buyrow" id="heroBuy">
+          <div class="qty"><button type="button" id="qMinus" aria-label="Decrease">&minus;</button><output id="qVal">1</output><button type="button" id="qPlus" aria-label="Increase">+</button></div>
+          <button type="button" class="btn btn-amber js-add">Add to Bag</button>
+        </div>
+        <a href="#compare" class="compare-link">Not sure the Oil is right for you? <b>Compare formats</b></a>
+        <div class="mini-trust">
+          <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Since 1998</div>
+          <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>Doctor-formulated</div>
+          <div><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>AYUSH GMP-certified facilities</div>
+          <div><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Made in India</div>
+        </div>
+        <p class="ship-note">Ships within India. Delivery timelines and charges will be confirmed at launch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 WHAT THIS FORMAT IS FOR -->
+<section class="fmt" id="format">
+  <div class="wrap fmt-grid">
+    <div>
+      <div class="eyebrow reveal">What this format is for</div>
+      <h2 class="reveal d1">For when care<br><em>deserves time.</em></h2>
+      <p class="reveal d2">Some care is quick. This one is not meant to be. Pain Relief Oil is the massage format in the range: warmed between the palms, worked in slowly and given the time a tired body asks for.</p>
+      <p class="reveal d2">It belongs to the moments when you can stop, sit down and let care take its course, on your own or in the hands of someone close to you.</p>
+      <div class="facts reveal d3">
+        <div><span>Format</span><b>Massage oil</b></div>
+        <div><span>Pace</span><b>A slow ritual</b></div>
+        <div><span>Best moment</span><b>End of the day</b></div>
+      </div>
+    </div>
+    <div class="fmt-visual reveal d1">
+      <img src="assets/pdp/massage-1.webp" alt="Warm oil poured into cupped hands">
+      <div class="inset"><img src="assets/pdp/massage-2.webp" alt="Shoulder massage"></div>
+      <span class="shot">Reference visual</span>
+    </div>
+  </div>
+</section>
+
+<!-- 03 WHEN TO REACH FOR IT (scroll-controlled) -->
+<section class="hurt" id="when">
+  <div class="hurt-head reveal"><span class="eyebrow">When to reach for it</span><h2>Three moments it was made for.</h2><p>Scroll through the hours when the Oil earns its place.</p></div>
+  <div class="hurt-track" id="hurtTrack">
+    <div class="hurt-sticky">
+      <div class="hurt-visual" id="hurtVisual">
+        <div class="hurt-shade"></div>
+        <div class="hurt-emerge" id="hurtEmerge"><img src="assets/pdp/product-oil.webp" alt=""></div>
+        <div class="hurt-clock"><svg class="clockface" viewBox="0 0 200 200" aria-hidden="true"><circle class="cf-ring" cx="100" cy="100" r="90"/><g class="cf-ticks" id="cfTicks"></g><line class="cf-hour" id="cfHour" x1="100" y1="100" x2="100" y2="58"/><line class="cf-min" id="cfMin" x1="100" y1="100" x2="100" y2="34"/><circle class="cf-cap" cx="100" cy="100" r="4.5"/></svg></div>
+        <div class="hurt-progress" id="hurtDots"></div>
+      </div>
+      <div class="hurt-body" id="hurtBody"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 HOW TO USE -->
+<section class="howto" id="howto">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">How to use</div>
+      <h2>A ritual in four steps.</h2>
+      <span class="flag">Draft &middot; final directions follow the approved label</span>
+    </div>
+    <div class="steps reveal" id="steps">
+      <div class="steps-line"><i></i></div>
+      <div class="step"><div class="n">01</div><div><h3>Warm</h3><p>Pour a little into your palm and rub your hands together to warm it.</p></div></div>
+      <div class="step"><div class="n">02</div><div><h3>Apply</h3><p>Spread it over the area that needs care.</p></div></div>
+      <div class="step"><div class="n">03</div><div><h3>Massage</h3><p>Work it in with slow, steady strokes. Take your time.</p></div></div>
+      <div class="step"><div class="n">04</div><div><h3>Rest</h3><p>Let it settle. Give the ritual a few quiet minutes.</p></div></div>
+    </div>
+    <div class="howto-note reveal">
+      <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M12 8v5M12 16h.01"/></svg>
+      <span>Usage directions, frequency and cautions will be published here exactly as approved on the product label.</span>
+    </div>
+  </div>
+</section>
+
+<!-- 05 TEXTURE / APPLICATION FILM -->
+<section class="film" aria-label="Texture and application film">
+  <video autoplay muted loop playsinline preload="metadata" poster="assets/video/film_poster.jpg">
+    <source src="assets/pdp/massage-film-lite.mp4" type="video/mp4">
+  </video>
+  <div class="film-shade"></div>
+  <div class="film-cap"><div class="wrap"><span class="eyebrow">Texture &amp; application</span><span class="note">Placeholder film &middot; final footage after the shoot</span></div></div>
+</section>
+
+<!-- 06 INGREDIENT / FORMULATION STORY -->
+<section class="ingredients" id="ingredients">
+  <div class="wrap">
+    <div class="ing-head reveal">
+      <span class="eyebrow">Inside the formulation</span>
+      <h2>Four ingredients.<br>Each one earns its place.</h2>
+      <span class="flag">Shown for layout &middot; final list follows the approved formulation</span>
+    </div>
+    <div class="ing-grid" id="ingGrid"></div>
+    <div class="principle reveal">
+      <p>&ldquo;An ingredient is never included because it is fashionable or commercially attractive. If it does not meaningfully strengthen the formulation, it does not earn its place.&rdquo;</p>
+      <a href="#" class="tlink">How we formulate &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- 07 WHY DR. D'SOUZA CREATED IT -->
+<section class="doctor" id="why">
+  <div class="doctor-photo"><img src="assets/pdp/dr-saji-dsouza-portrait.webp" alt="Dr. Saji D'Souza, Ayurvedic Physician"><span class="frame-note">Dr. Saji D'Souza &middot; Founder</span></div>
+  <div class="doctor-text">
+    <div class="eyebrow reveal">Why Dr. D'Souza created it</div>
+    <h2 class="reveal d1">Pain is your body's way of <em>starting a conversation.</em></h2>
+    <p class="reveal d2">Pain is often the first sign that something within the body needs attention. Pain itself is rarely the disease. More often, it is the body's way of asking us to look deeper.</p>
+    <p class="reveal d2">While lasting recovery begins with understanding and treating the underlying cause, everyday life cannot always wait. Work continues. Families need us. Responsibilities remain. During that time, people deserve products that help them move more comfortably and recover more confidently.</p>
+    <div class="sig reveal d3">
+      <b>Dr. Saji D'Souza</b>
+      <div class="role">Ayurvedic Physician &middot; Formulator</div>
+      <div class="creds">BAMS, Kerala University &middot; MS, Rajiv Gandhi University &middot; Founder, KSAC Hospitals</div>
+    </div>
+    <a href="index.html#doctor" class="btn btn-ghost reveal d3" style="color:var(--bone);align-self:flex-start">Meet Dr. D'Souza</a>
+  </div>
+</section>
+
+<!-- 08 WHO THIS FORMAT FITS -->
+<section class="fits" id="fits">
+  <div class="wrap fits-grid">
+    <div class="fits-side">
+      <div class="eyebrow reveal">Who this format fits</div>
+      <h2 class="reveal d1">Made for you if&hellip;</h2>
+      <p class="intro reveal d2">The Oil is the slow format in the range. If your day allows a few unhurried minutes, it fits.</p>
+      <button type="button" class="btn btn-dark reveal d3 js-add">Add to Bag</button>
+    </div>
+    <ul class="fit-list" id="fitList"></ul>
+  </div>
+</section>
+
+<!-- 09 COMPARISON WITH OTHER FORMATS -->
+<section class="compare" id="compare">
+  <img class="boat" src="assets/mural/mural_boat.png" alt="">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Is another format better for you?</div>
+      <h2>Every pain is different.<br>So is every therapy.</h2>
+      <p>Five formats in the Pain Therapy Collection. Tell us what you are experiencing and we will point you to the one that fits.</p>
+    </div>
+    <div class="matcher reveal d1">
+      <div class="opt-label">If you're experiencing&hellip;</div>
+      <div class="chips" id="chips"></div>
+      <div class="rec" id="rec"></div>
+    </div>
+    <div class="fmt-row" id="fmtRow"></div>
+    <p class="compare-note">Product visuals are reference renders. Final pack shots and names follow the photoshoot and product approval.</p>
+  </div>
+</section>
+
+<!-- 10 OUR PHILOSOPHY + WHEN TO SEEK MEDICAL ADVICE (client copy) -->
+<section class="advice" id="advice">
+  <div class="wrap advice-grid">
+    <div>
+      <div class="eyebrow reveal">Our philosophy towards pain</div>
+      <h2 class="reveal d1">Relieving pain is important. <em>Understanding why it exists is even more important.</em></h2>
+      <p class="lede reveal d2">Pain should never simply be ignored, or merely silenced. Musculoskeletal discomfort can sometimes be a sign of an underlying condition that requires proper evaluation and treatment. Treating pain may help you feel better today. Treating its cause helps you move better tomorrow.</p>
+    </div>
+    <div class="advice-card reveal d1">
+      <h3>When should you seek medical advice?</h3>
+      <div class="if">If your pain</div>
+      <ul>
+        <li>Persists despite rest or self-care</li>
+        <li>Frequently returns</li>
+        <li>Is severe or progressively worsening</li>
+        <li>Limits your movement or daily activities</li>
+        <li>Is accompanied by swelling, numbness or other concerning symptoms</li>
+      </ul>
+      <p class="close">We encourage you to consult a qualified healthcare professional. Our products are designed to support everyday comfort and recovery, but they are not intended to replace professional medical assessment when it is needed.</p>
+      <a class="consult-link" href="https://www.ksachospitals.com/?utm_source=drdsouzas&amp;utm_medium=website&amp;utm_campaign=consult_referral" target="_blank" rel="noopener">Kindly consult our experts &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- 11 FAQS -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Questions</div>
+      <h2>Before you reach for it.</h2>
+      <span class="flag">Draft &middot; answers marked TBC await approved product information</span>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- 12 REVIEWS -->
+<section class="reviews" id="reviews">
+  <img class="cert-corner" src="assets/mural/mural_corner.png" alt="">
+  <div class="wrap rev-grid">
+    <div>
+      <div class="eyebrow reveal">Reviews</div>
+      <h2 class="reveal d1">Real reviews, the moment they are real.</h2>
+      <p class="lede reveal d2">We will not show reviews we do not have. Verified customer reviews open here after launch. Until then, our proof is the practice.</p>
+      <div class="rev-proof reveal d3">
+        <div><b>1998</b><span>Practising since</span></div>
+        <div><b>Doctor-led</b><span>Formulated in practice</span></div>
+      </div>
+    </div>
+    <div class="slots reveal d1" id="slots"></div>
+  </div>
+</section>
+
+<!-- 13 JOURNAL (read more) -->
+<section class="journal" id="journal">
+  <div class="wrap">
+    <div class="journal-head reveal">
+      <div><div class="eyebrow">The Dr. D'Souza's Journal</div><h2>Read more before your next ritual.</h2></div>
+      <a href="index.html#journal" class="btn btn-dark">Read the Journal</a>
+    </div>
+    <div class="jgrid" id="journalGrid"></div>
+  </div>
+</section>
+
+<!-- CONSULT / KSAC referral (homepage) -->
+<section class="consult">
+  <div class="wrap"><p>Crafted with utmost care to serve its purpose. Should results fall short, your condition may require personalised attention. <a class="consult-link" href="https://www.ksachospitals.com/?utm_source=drdsouzas&amp;utm_medium=website&amp;utm_campaign=consult_referral" target="_blank" rel="noopener">Kindly consult our experts</a>.</p></div>
+</section>
+
+<!-- FOOTER (homepage) -->
+<footer id="footer">
+  <img class="foot-boat" src="assets/mural/mural_boat.png" alt="">
+  <div class="wrap">
+    <img class="foot-sig" src="assets/logo_white.png" alt="Dr. D'Souza's">
+    <div class="foot-line">Care, carried forward.</div>
+    <div class="foot-nav">
+      <a href="index.html#shop">Shop</a>
+      <a href="index.html#heritage">Our Story</a>
+      <a href="index.html#journal">Journal</a>
+      <a href="index.html#ingredients">Ingredients</a>
+      <a href="#faq">FAQs</a>
+      <a href="#">Contact</a>
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+    </div>
+    <div class="foot-legal">
+      <span>&copy; 2026 Dr. D'Souza's</span>
+      <span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Shipping</a><a href="#">Returns</a></span>
+    </div>
+    <div class="foot-unit">Dr. D'Souza's &middot; A unit of KSAC Hospitals (I) Pvt. Ltd.</div>
+  </div>
+</footer>
+
+<!-- 12b STICKY PURCHASE -->
+<div class="sticky-buy" id="stickyBuy" aria-hidden="true">
+  <div class="wrap">
+    <div class="sb-thumb"><img src="assets/pdp/product-oil.webp" alt=""></div>
+    <div class="sb-info"><b><span class="sb-tag">Massage</span>Pain Relief Oil</b><span>Price on confirmation</span></div>
+    <button type="button" class="btn btn-amber js-add">Add to Bag</button>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i><div>Added to bag<small>Prototype preview, checkout not connected</small></div></div>
+
+<script>
+/* =====================================================================
+   DATA (edit here: swapping the product line-up is a one-block change)
+   ===================================================================== */
+const GALLERY=[
+  {src:'assets/pdp/product-oil.webp',label:'Reference render · pack shot pending',alt:'Pain Relief Oil bottle'},
+  {src:'assets/pdp/label-front.webp',label:'Label artwork · front panel',alt:'Pain Relief Oil label artwork',contain:true},
+  {src:'assets/pdp/massage-1.webp',label:'Texture',alt:'Warm oil poured into hands'},
+  {src:'assets/pdp/massage-2.webp',label:'In use',alt:'Shoulder massage'},
+  {src:'assets/pdp/range.webp',label:'The Pain Therapy range',alt:'The range'}
+];
+const MOMENTS=[
+  {time:'21:10',label:'09:10 PM',h:'Home. Quiet at last.',ctx:'A slow massage becomes the close of the day.',fit:'Muscle stiffness',img:'assets/pdp/day-night.webp'},
+  {time:'18:25',label:'06:25 PM',h:'After everything has worked.',ctx:'Muscles are warm and spent. Recovery deserves more than a quick pass.',fit:'Recovery after physical activity',img:'assets/pdp/day-evening.webp'},
+  {time:'10:10',label:'Any day, every day',h:'A daily self-massage ritual.',ctx:'For aches that have stayed a while, and ask for steady, unhurried care.',fit:'Daily self-massage · Long-standing aches',img:'assets/pdp/massage-2.webp'}
+];
+const INGREDIENTS=[
+  {name:'AJWAIN',bot:'Yavani',ctx:'A warming seed long used in Ayurvedic practice for its soothing, carminative character.',role:'Lends the formulation its gentle heat.',img:'assets/pdp/ing-ajwain.webp'},
+  {name:'TILA',bot:'Sesamum indicum',ctx:'Sesame, the classical Ayurvedic base oil.',role:'Carries the other herbs deep and steady, the quiet foundation of a good massage oil.',img:'assets/pdp/ing-tila.webp'},
+  {name:'NIRGUNDI',bot:'Vitex negundo',ctx:'A revered herb in traditional joint and muscle care.',role:'Chosen for its long-standing role in comforting formulations.',img:'assets/pdp/ing-nirgundi.webp'},
+  {name:'KARPURA',bot:'Cinnamomum camphora',ctx:'Camphor, a familiar presence in classical Ayurvedic preparations.',role:'That unmistakable cooling lift. It signals, on the skin, that care has arrived.',img:'assets/pdp/ing-karpura.webp'}
+];
+const FITS=['Joint discomfort','Muscle stiffness','Recovery after physical activity','Daily self-massage','Long-standing aches'];
+/* Line-up from the client content doc "Pain Therapy Collection" */
+const FORMATS=[
+  {id:'roll',n:'Pain Relief Roll-On',cat:'On the move',tl:'Instant, targeted comfort for life on the move.',when:'Neck pain during work',img:'assets/pdp/product-rollon.webp'},
+  {id:'oil',n:'Pain Relief Oil',cat:'Massage',tl:'Traditional Ayurvedic massage for deeper comfort.',when:'Sore muscles after activity',img:'assets/pdp/product-oil.webp',here:true},
+  {id:'soak',n:'Therapeutic Recovery Soak',cat:'Ritual',tl:'Turn recovery into a ritual.',when:'Tired legs after standing all day',img:null},
+  {id:'rub',n:'Ayurvedic Vapour Rub',cat:'Warmth',tl:'Comforting warmth whenever you need it most.',when:'Muscle tension with seasonal discomfort',img:'assets/pdp/product-balm.webp'},
+  {id:'kizhi',n:'Herbal Therapy Kizhi',cat:'Heat therapy',tl:"Bring one of Ayurveda's most celebrated therapies home.",when:'A deeper recovery ritual',img:'assets/pdp/kizhi.webp'}
+];
+const FAQS=[
+  {q:'Who is Pain Relief Oil best suited for?',a:'It is made for joint discomfort, muscle stiffness, recovery after physical activity, daily self-massage and long-standing aches. It suits anyone who can give their care a few unhurried minutes.'},
+  {q:'How is the Oil different from the Roll-On?',a:'The Roll-On is designed for quick, targeted comfort on the move. The Oil is created for massage, when there is time for a slower, deeper ritual. Between meetings, reach for the Roll-On. When the day is done, reach for the Oil.'},
+  {q:'How often can I use it?',a:'Directions for use and frequency will appear here exactly as approved on the product label.',tbc:true},
+  {q:"What's in it?",a:'The full ingredient list will be published here from the approved formulation. Every ingredient is selected for its traditional role, its therapeutic purpose and its contribution to the formulation as a whole.',tbc:true},
+  {q:'Where is it made?',a:'Every Dr. D’Souza’s formulation is manufactured in carefully selected, licensed AYUSH GMP-certified facilities that comply with applicable Ministry of AYUSH and FSSAI regulations.'},
+  {q:'When should I see a doctor instead?',a:'If your pain persists despite rest, frequently returns, is severe or worsening, limits your movement or comes with swelling or numbness, please consult a qualified healthcare professional. Our products support everyday comfort, they do not replace medical assessment.'},
+  {q:'Do you ship across India?',a:'Yes, Dr. D’Souza’s ships within India. Delivery timelines and charges will be confirmed at launch.',tbc:true}
+];
+const JOURNAL=[
+  {cat:'Ritual',t:'What makes massage different from quick application',e:'Two ways to care for the same ache, and when each one earns its place.',img:'assets/pdp/journal-2.webp'},
+  {cat:'The Body',t:'Why your neck feels different after eight hours at a desk',e:'The quiet mechanics of posture, and what your muscles are actually asking for.',img:'assets/pdp/journal-1.webp'},
+  {cat:'Ayurveda',t:'What Ayurveda means when it talks about pain',e:'Beyond the symptom, toward the root. A gentle primer, minus the jargon.',img:'assets/pdp/journal-3.webp'}
+];
+
+/* =====================================================================
+   RENDER
+   ===================================================================== */
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+
+// Gallery
+const gMain=$('#gMain'),gThumbs=$('#gThumbs');
+GALLERY.forEach((g,i)=>{
+  const im=document.createElement('img');im.src=g.src;im.alt=g.alt;if(g.contain)im.classList.add('contain');if(i===0)im.classList.add('on');
+  if(i>0)im.loading='lazy';gMain.appendChild(im);
+  const t=document.createElement('button');t.type='button';t.className='g-thumb'+(i===0?' on':'');t.setAttribute('aria-label',g.label);
+  t.innerHTML='<img src="'+g.src+'" alt="">';t.onclick=()=>showG(i);gThumbs.appendChild(t);
+});
+const gShot=document.createElement('span');gShot.className='shot';gMain.appendChild(gShot);
+let gi=0;
+function showG(i){gi=i;[...gMain.querySelectorAll('img')].forEach((im,j)=>im.classList.toggle('on',j===i));
+  [...gThumbs.children].forEach((t,j)=>t.classList.toggle('on',j===i));gShot.textContent=GALLERY[i].label;}
+showG(0);
+// swipe on main image (mobile)
+let sx=null;gMain.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
+gMain.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)showG((gi+(dx<0?1:-1)+GALLERY.length)%GALLERY.length);sx=null;});
+
+// Quantity + Add to bag
+let qv=1,cart=0;
+$('#qMinus').onclick=()=>{qv=Math.max(1,qv-1);$('#qVal').textContent=qv;};
+$('#qPlus').onclick=()=>{qv=Math.min(9,qv+1);$('#qVal').textContent=qv;};
+let tt;
+$$('.js-add').forEach(b=>b.addEventListener('click',()=>{
+  cart+=qv;const c=$('#cartCount');c.textContent=cart;c.classList.add('bump');setTimeout(()=>c.classList.remove('bump'),300);
+  const t=$('#toast');t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),2600);
+}));
+
+// When to reach for it (scroll-controlled, same engine as homepage)
+const hurtBody=$('#hurtBody'),hurtDots=$('#hurtDots'),hurtVisual=$('#hurtVisual');
+MOMENTS.forEach((m,i)=>{
+  hurtVisual.insertAdjacentHTML('afterbegin','<img class="hurt-img'+(i===0?' on':'')+'" data-i="'+i+'" src="'+m.img+'" alt="">');
+  const d=document.createElement('div');d.className='hurt-step'+(i===0?' active':'');
+  d.innerHTML='<div class="time">'+m.label+'</div><h3>'+m.h+'</h3><div class="ctx">'+m.ctx+'</div><div class="prod">Suited for<b>'+m.fit+'</b></div>';
+  hurtBody.appendChild(d);
+  const dot=document.createElement('i');if(i===0)dot.className='on';hurtDots.appendChild(dot);
+});
+$('#hurtTrack').style.height=(MOMENTS.length*100)+'vh';
+(function(){const g=$('#cfTicks');for(let i=0;i<12;i++){const a=i*30*Math.PI/180,r1=88,r2=(i%3===0?76:82);const ln=document.createElementNS('http://www.w3.org/2000/svg','line');ln.setAttribute('x1',100+r1*Math.sin(a));ln.setAttribute('y1',100-r1*Math.cos(a));ln.setAttribute('x2',100+r2*Math.sin(a));ln.setAttribute('y2',100-r2*Math.cos(a));g.appendChild(ln);}})();
+let lastM=-1;
+function setClock(t){const p=t.split(':'),hh=+p[0],mm=+p[1];$('#cfHour').style.transform='rotate('+((hh%12)*30+mm*.5)+'deg)';$('#cfMin').style.transform='rotate('+(mm*6)+'deg)';}
+function updateMoments(){
+  const tr=$('#hurtTrack'),r=tr.getBoundingClientRect(),total=tr.offsetHeight-window.innerHeight;
+  const p=Math.min(1,Math.max(0,(-r.top)/total));const idx=Math.min(MOMENTS.length-1,Math.floor(p*MOMENTS.length));
+  if(idx===lastM)return;lastM=idx;
+  $$('.hurt-step').forEach((s,i)=>s.classList.toggle('active',i===idx));
+  [...hurtDots.children].forEach((d,i)=>d.className=i===idx?'on':'');
+  $$('.hurt-img').forEach(im=>im.classList.toggle('on',+im.dataset.i===idx));
+  setClock(MOMENTS[idx].time);
+  const he=$('#hurtEmerge');he.classList.remove('in');void he.offsetWidth;he.classList.add('in');
+}
+
+// Ingredients
+const ingGrid=$('#ingGrid');
+INGREDIENTS.forEach((g,i)=>{const el=document.createElement('div');el.className='ing-card reveal'+(i%2?' d1':'');
+  el.innerHTML='<div class="ing-visual"><img src="'+g.img+'" alt="'+g.name+'" loading="lazy"></div><div><div class="name">'+g.name+'</div><div class="botanical">'+g.bot+'</div><dl><div><dt>Traditional context</dt><dd>'+g.ctx+'</dd></div><div><dt>Role in the formulation</dt><dd>'+g.role+'</dd></div></dl></div>';
+  ingGrid.appendChild(el);});
+
+// Who this format fits
+const fitList=$('#fitList');
+FITS.forEach((f,i)=>{const li=document.createElement('li');li.className='reveal'+(i?' d'+Math.min(i,4):'');
+  li.innerHTML='<span class="ix">0'+(i+1)+'</span><span class="t">'+f+'</span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.4 2.4 4.6-5.2"/></svg>';fitList.appendChild(li);});
+
+// Comparison + matcher
+const fmtRow=$('#fmtRow'),chips=$('#chips'),rec=$('#rec');
+FORMATS.forEach(f=>{
+  const c=document.createElement('a');c.href=f.here?'#top':'#';c.className='fcard'+(f.here?' here':'');c.dataset.id=f.id;
+  const img=f.img?'<img src="'+f.img+'" alt="'+f.n+'" loading="lazy">':'<div class="ph"><span class="glyph">'+f.n.split(' ').pop().charAt(0)+'</span></div>';
+  c.innerHTML='<div class="fimg">'+(f.here?'<span class="fbadge">You are here</span>':(f.img?'':'<span class="fbadge">Pack shot pending</span>'))+img+'</div><div class="fbody"><div class="fcat">'+f.cat+'</div><h3>'+f.n+'</h3><div class="tl">'+f.tl+'</div><div class="when"><span>Reach for it when</span>'+f.when+'</div><span class="view">'+(f.here?'Viewing now':'View &rarr;')+'</span></div>';
+  fmtRow.appendChild(c);
+  const ch=document.createElement('button');ch.type='button';ch.className='chip';ch.textContent=f.when;ch.onclick=()=>match(f.id);chips.appendChild(ch);
+});
+function match(id){
+  const f=FORMATS.find(x=>x.id===id);
+  [...chips.children].forEach((c,i)=>c.classList.toggle('on',FORMATS[i].id===id));
+  [...fmtRow.children].forEach(c=>c.classList.toggle('match',c.dataset.id===id));
+  rec.innerHTML='We recommend <b>'+f.n+'</b>'+(f.here?', the one you are looking at.':'.');
+  const card=fmtRow.querySelector('[data-id="'+id+'"]');
+  if(fmtRow.scrollWidth>fmtRow.clientWidth&&card){fmtRow.scrollTo({left:card.offsetLeft-fmtRow.offsetLeft-22,behavior:'smooth'});}
+}
+match('oil');
+
+// FAQs
+const faqList=$('#faqList');
+FAQS.forEach((f,i)=>{const d=document.createElement('div');d.className='qa'+(i===0?' open':'');
+  d.innerHTML='<button type="button" aria-expanded="'+(i===0)+'"><span>'+f.q+(f.tbc?'<span class="tbc">TBC</span>':'')+'</span><span class="pm"></span></button><div class="ans"><div><p>'+f.a+'</p></div></div>';
+  d.querySelector('button').onclick=()=>{const o=d.classList.toggle('open');d.querySelector('button').setAttribute('aria-expanded',o);};
+  faqList.appendChild(d);});
+
+// Review slots (no fabricated reviews)
+const star='<svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
+$('#slots').innerHTML=[0,1].map(i=>'<div class="slot"><div class="stars">'+star.repeat(5)+'</div><div class="bar m"></div><div class="bar'+(i?' s':'')+'"></div><div class="bar s"></div><div class="who"><span>Verified review slot</span><span>Opens after launch</span></div></div>').join('');
+
+// Journal
+const jg=$('#journalGrid');
+JOURNAL.forEach((a,i)=>{const c=document.createElement('div');c.className='jcard reveal'+(i?' d'+i:'');
+  c.innerHTML='<div class="jimg"><img src="'+a.img+'" alt="" loading="lazy"></div><div class="jcat">'+a.cat+'</div><h3>'+a.t+'</h3><p>'+a.e+'</p>';jg.appendChild(c);});
+
+/* =====================================================================
+   SCROLL BEHAVIOUR
+   ===================================================================== */
+const nav=$('#nav'),sticky=$('#stickyBuy'),heroBuy=$('#heroBuy'),footer=$('#footer');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.16});
+$$('.reveal').forEach(el=>io.observe(el));
+const stepsIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$('#steps').classList.add('in');}),{threshold:.4});
+stepsIO.observe($('#steps'));
+function onScroll(){
+  nav.classList.toggle('solid',window.scrollY>60);
+  const hb=heroBuy.getBoundingClientRect(),fr=footer.getBoundingClientRect();
+  const show=hb.bottom<70&&fr.top>window.innerHeight-20;
+  sticky.classList.toggle('show',show);sticky.setAttribute('aria-hidden',!show);
+  updateMoments();
+}
+let ticking=false;
+window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(()=>{onScroll();ticking=false;});ticking=true;}},{passive:true});
+window.addEventListener('resize',onScroll);
+onScroll();setClock(MOMENTS[0].time);
+
+// mobile menu
+$('#burger').onclick=()=>$('#mobmenu').classList.add('open');
+$('#mobclose').onclick=()=>$('#mobmenu').classList.remove('open');
+$$('.mobmenu a').forEach(a=>a.onclick=()=>$('#mobmenu').classList.remove('open'));
+</script>
+</body>
+</html>
