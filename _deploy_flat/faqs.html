@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQs | Dr. D'Souza's</title>
+<meta name="description" content="Quick answers about orders, delivery, products and returns.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bone:#F3EBDD;--cream:#F7F0E4;--choc:#271611;--choc-2:#3A2318;--choc-soft:#4A2E20;--deep:#1C0F0B;--clay:#B4562F;--amber:#E0912F;--amber-2:#EDA23C;--ink:#271611;--muted:#6B5849;
+--font-serif:'Fraunces',Georgia,serif;--font-sans:'Inter',system-ui,sans-serif;--ease:cubic-bezier(.22,.61,.36,1);color-scheme:dark}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);color:var(--ink);background:var(--choc);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+h1,h2,h3{text-wrap:balance}
+.wrap{max-width:1240px;margin:0 auto;padding:0 40px}
+.eyebrow{text-transform:uppercase;letter-spacing:.28em;font-size:12px;font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:15px 28px;border-radius:40px;border:none;cursor:pointer;transition:.35s var(--ease);white-space:nowrap}
+.btn-amber{background:var(--amber);color:var(--choc)}.btn-amber:hover{background:var(--amber-2);transform:translateY(-2px)}
+.btn-dark{background:var(--choc);color:var(--bone)}.btn-dark:hover{background:var(--choc-2);transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid currentColor}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:12px 0;padding-top:calc(12px + env(safe-area-inset-top,0px));background:rgba(39,22,17,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(247,240,228,.08)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between}
+.nav-logo img{height:38px;width:auto}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--bone);font-weight:500;opacity:.9;transition:.25s}
+.nav-links a:hover{opacity:1;color:var(--amber)}
+.nav-cta{font-size:11.5px!important;border:1.4px solid rgba(243,235,221,.5);padding:10px 18px;border-radius:30px}
+.nav-cta:hover{background:var(--amber);border-color:var(--amber);color:var(--choc)!important}
+.nav-icons{display:flex;gap:18px;align-items:center}
+.nav-icons svg{width:19px;height:19px;stroke:var(--bone);fill:none;stroke-width:1.6}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}.burger span{width:24px;height:2px;background:var(--bone)}
+.mobmenu{position:fixed;inset:0;background:var(--choc);z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transform:translateY(-100%);transition:.5s var(--ease)}
+.mobmenu.open{transform:none}.mobmenu a{font-family:var(--font-serif);font-size:24px;color:var(--bone)}
+.mobmenu .close{position:absolute;top:24px;right:24px;font-size:30px;color:var(--bone);cursor:pointer}
+/* hero */
+.p-hero{background:radial-gradient(120% 120% at 20% 0%,#3A2318 0%,#271611 60%);color:var(--bone);padding:132px 0 56px;position:relative;overflow:hidden}
+.p-hero .mural{position:absolute;top:0;right:0;width:150px;opacity:.3;transform:scaleX(-1);pointer-events:none}
+.crumbs{display:flex;gap:10px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,235,221,.72);margin-bottom:22px}
+.crumbs a:hover{color:var(--amber)}.crumbs .cur{color:var(--bone)}
+.p-hero h1{font-family:var(--font-serif);font-weight:300;font-size:clamp(36px,4.6vw,60px);line-height:1.04}
+.p-hero p{margin-top:14px;max-width:560px;font-size:16.5px;line-height:1.65;color:rgba(243,235,221,.9)}
+.draft{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:20px;border:1px dashed var(--amber);color:var(--amber)}
+/* layout */
+.p-body{background:var(--bone);padding:64px 0 100px}
+.p-grid{display:grid;grid-template-columns:230px minmax(0,1fr);gap:64px;align-items:start}
+.side{position:sticky;top:96px}
+.side .lbl{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--clay);margin-bottom:12px}
+.side a{display:block;padding:10px 14px;border-radius:10px;font-size:14.5px;color:var(--choc-soft);transition:.25s}
+.side a:hover{background:var(--cream)}
+.side a.on{background:var(--choc);color:var(--bone)}
+.content{max-width:760px}
+.content.wide{max-width:none}
+.updated{font-size:12.5px;color:var(--muted);margin-bottom:26px}
+.content h2{font-family:var(--font-serif);font-weight:400;font-size:clamp(21px,2vw,25px);margin:34px 0 10px;scroll-margin-top:96px}
+.content h2:first-of-type{margin-top:0}
+.content p,.content li{font-size:16px;line-height:1.7;color:var(--choc-soft)}
+.content p+p{margin-top:10px}
+.content ul{padding-left:20px;display:grid;gap:6px;margin-top:8px}
+.content li::marker{color:var(--clay)}
+.content a.inl{color:var(--clay);border-bottom:1px solid currentColor}
+mark.tbc{background:rgba(224,145,47,.22);color:var(--ink);padding:1px 6px;border-radius:5px;font-weight:600;font-size:.94em}
+.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:34px}
+.summary div{background:var(--cream);border-radius:14px;padding:18px}
+.summary b{display:block;font-family:var(--font-serif);font-weight:400;font-size:20px;margin-top:6px}
+.summary span{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--clay)}
+.note{margin-top:34px;padding:16px 18px;border-radius:12px;background:var(--cream);border-left:3px solid var(--clay);font-size:14px;line-height:1.6;color:var(--choc-soft)}
+/* faq */
+.f-search{position:relative;margin-bottom:26px}
+.f-search input{width:100%;padding:15px 18px 15px 46px;border-radius:40px;border:1.5px solid rgba(39,22,17,.18);background:#FFFBF5;font-size:15px}
+.f-search input:focus{outline:none;border-color:var(--clay)}
+.f-search svg{position:absolute;left:17px;top:50%;transform:translateY(-50%);width:18px;height:18px;stroke:var(--muted);fill:none;stroke-width:1.8}
+.f-group{margin-bottom:26px}
+.f-group h2{font-family:var(--font-sans);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--clay);margin:0 0 6px}
+.qa{border-bottom:1px solid rgba(39,22,17,.14)}
+.qa button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;text-align:left;padding:18px 0;font-family:var(--font-serif);font-weight:400;font-size:19px;line-height:1.3;color:var(--ink)}
+.qa button:hover{color:var(--clay)}
+.pm{position:relative;flex:0 0 16px;width:16px;height:16px}
+.pm::before,.pm::after{content:"";position:absolute;left:0;top:50%;width:16px;height:1.6px;background:currentColor;transform:translateY(-50%);transition:transform .35s var(--ease)}
+.pm::after{transform:translateY(-50%) rotate(90deg)}
+.qa.open .pm::after{transform:translateY(-50%) rotate(0)}
+.qa .ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s var(--ease)}
+.qa.open .ans{grid-template-rows:1fr}
+.qa .ans>div{overflow:hidden}
+.qa .ans p{padding:0 30px 18px 0}
+.f-none{display:none;padding:20px 0;color:var(--muted)}
+/* contact */
+.c-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:start}
+.form{background:#FFFBF5;border-radius:20px;padding:30px;border:1px solid rgba(39,22,17,.08)}
+.form h2{margin-top:0}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fld{display:grid;gap:6px;margin-bottom:14px}
+.fld label{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--choc-soft)}
+.fld input,.fld select,.fld textarea{width:100%;padding:13px 14px;border-radius:10px;border:1.5px solid rgba(39,22,17,.16);background:#fff;font-size:15px}
+.fld textarea{min-height:120px;resize:vertical}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--clay)}
+.form .ok{display:none;margin-top:14px;padding:14px 16px;border-radius:10px;background:rgba(180,86,47,.1);color:var(--ink);font-size:14.5px}
+.form.sent .ok{display:block}
+.cards{display:grid;gap:12px}
+.ccard{display:flex;gap:16px;align-items:flex-start;padding:20px;border-radius:16px;background:var(--cream);border:1.5px solid transparent;transition:border-color .3s}
+.ccard:hover{border-color:var(--clay)}
+.ccard .ic{flex:0 0 42px;width:42px;height:42px;border-radius:50%;background:var(--bone);display:flex;align-items:center;justify-content:center}
+.ccard .ic svg{width:20px;height:20px;stroke:var(--clay);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ccard b{display:block;font-family:var(--font-serif);font-weight:400;font-size:19px;margin-bottom:3px}
+.ccard p{font-size:14.5px;line-height:1.55;color:var(--choc-soft)}
+.ccard.dark{background:var(--choc);color:var(--bone)}
+.ccard.dark p{color:rgba(243,235,221,.88)}
+.ccard.dark .ic{background:var(--choc-2)}
+.ccard.dark .ic svg{stroke:var(--amber)}
+.ccard.dark a{color:var(--amber);border-bottom:1px solid currentColor}
+/* help band + footer */
+.help{background:var(--choc-2);color:var(--bone);padding:56px 0}
+.help .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.help h2{font-family:var(--font-serif);font-weight:300;font-size:clamp(24px,2.6vw,34px)}
+.help p{color:rgba(243,235,221,.88);margin-top:6px;font-size:15px}
+.help .acts{display:flex;gap:12px;flex-wrap:wrap}
+.help .btn-ghost{color:var(--bone)}
+.help .btn-ghost:hover{background:var(--bone);color:var(--choc)}
+footer{background:var(--choc);color:var(--bone);padding:70px 0 36px;text-align:center;position:relative;overflow:hidden}
+.foot-boat{position:absolute;top:0;left:0;width:100%;opacity:.08;pointer-events:none}
+footer .wrap{position:relative;z-index:2}
+.foot-sig{width:min(60vw,300px);margin:0 auto 14px}
+.foot-line{font-family:var(--font-serif);font-size:22px;font-weight:300;font-style:italic}
+.foot-nav{display:flex;justify-content:center;flex-wrap:wrap;margin:34px auto;gap:16px 36px;max-width:680px}
+.foot-nav a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,235,221,.9)}
+.foot-nav a:hover{color:var(--amber)}
+.foot-legal{border-top:1px solid rgba(243,235,221,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:11.5px;color:rgba(243,235,221,.66)}
+.foot-legal a{margin-left:16px}.foot-legal a:hover{color:var(--amber)}
+.foot-unit{margin-top:18px;letter-spacing:.14em;font-size:11.5px;color:rgba(243,235,221,.75);text-transform:uppercase;font-weight:600}
+@media(max-width:900px){
+  .wrap{padding:0 22px}.nav-links{display:none}.burger{display:flex}.nav-icons{gap:14px}
+  .p-grid{grid-template-columns:1fr;gap:26px}
+  .side{position:static;display:flex;gap:8px;overflow-x:auto;margin:0 -22px;padding:0 22px 4px;scrollbar-width:none}
+  .side::-webkit-scrollbar{display:none}
+  .side .lbl{display:none}
+  .side a{flex:0 0 auto;padding:9px 14px;border:1px solid rgba(39,22,17,.16);border-radius:30px;font-size:13px}
+  .c-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .nav-logo img{height:32px}
+  .p-hero{padding:104px 0 44px}
+  .p-body{padding:34px 0 72px}
+  .summary{grid-template-columns:1fr}
+  .row2{grid-template-columns:1fr}
+  .form{padding:22px}
+  .qa button{font-size:17.5px}
+  .help .acts .btn{flex:1 1 100%}
+  .foot-legal{flex-direction:column;text-align:center}.foot-legal a{margin:0 8px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="wrap">
+  <a href="index.html" class="nav-logo"><img src="assets/logo_white_nav.png" alt="Dr. D'Souza's"></a>
+  <div class="nav-links"><a href="pain-therapy.html">Shop</a><a href="index.html#quiz">Find Your Therapy</a><a href="about-us.html">Our Story</a><a href="how-we-formulate.html">How We Formulate</a><a href="faqs.html">FAQs</a><a href="pain-therapy.html" class="nav-cta">Shop the Range</a></div>
+  <div class="nav-icons"><svg viewBox="0 0 24 24" aria-label="Search"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg><svg viewBox="0 0 24 24" aria-label="Bag"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><div class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></div></div>
+</div></nav>
+<div class="mobmenu" id="mobmenu"><span class="close" id="mobclose">&times;</span><a href="pain-therapy.html">Shop</a><a href="index.html#quiz">Find Your Therapy</a><a href="about-us.html">Our Story</a><a href="how-we-formulate.html">How We Formulate</a><a href="faqs.html">FAQs</a><a href="contact.html">Contact</a></div>
+<section class="p-hero"><img class="mural" src="assets/mural/mural_corner.png" alt=""><div class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><span class="cur">FAQs</span></div>
+  <h1>FAQs</h1><p>Quick answers about orders, delivery, products and returns.</p>
+</div></section>
+<section class="p-body"><div class="wrap p-grid"><aside class="side" aria-label="Help and policies"><div class="lbl">Help &amp; policies</div><a href="contact.html">Contact us</a><a href="faqs.html" class="on" aria-current="page">FAQs</a><a href="shipping-policy.html">Shipping policy</a><a href="returns-and-refunds.html">Returns & refunds</a><a href="privacy-policy.html">Privacy policy</a><a href="terms-of-service.html">Terms of service</a></aside><div class="content"><div class="f-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg><input id="fq" type="search" placeholder="Search questions" aria-label="Search questions"></div><div class="f-group"><h2>Orders and delivery</h2><div class="qa"><button type="button" aria-expanded="false">Do I need an account to order?<span class="pm" aria-hidden="true"></span></button><div class="ans"><div><p>No. You can check out as a guest. Your order confirmation email includes a link to track your order.</p></div></div></div><div class="qa"><button type="button" aria-expanded="false">Where do you deliver?<span class="pm" aria-hidden="true"></span></button><div class="ans"><div><p>We currently deliver within India.</p></div></div></div><div class="qa"><button type="button" aria-expanded="false">How long does delivery take?<span class="pm" aria-hidden="true"></span></button><div class="ans"><div><p>Orders are usually delivered within <mark class="tbc">number of days</mark>. See our <a class="inl" href="shipping-policy.html">shipping policy</a> for details.</p></div></div></div><div class="qa"><button type="button" aria-expanded="false">Which payment methods do you accept?<span class="pm" aria-hidden="true"></span></button><div class="ans"><div><p><mark class="tbc">payment methods</mark></p></div></div></div></div><div class="f-group"><h2>Products</h2><div class="qa"><button type="button" aria-expanded="false">Which format is right for me?<span class="pm" aria-hidden="true"></span></button><div class="ans"><div><p>Each format suits a different moment, from quick relief on the move to a slower massage ritual. Compare all five on the <a class="inl" href="pain-therapy.html">Pain Therapy collection</a>.</p></div></div></div><div class="qa"><button type="button" aria-expanded="false">Where are your products made?<span class="pm" aria-hidden="true"></span></button><div class="ans"><div><p>In licensed AYUSH GMP-certified facilities. Read more on <a class="inl" href="how-we-formulate.html">how we formulate</a>.</p></div></div></div><div class="qa"><button type="button" aria-expanded="false">Can these products replace a doctor's advice?<span class="pm" aria-hidden="true"></span></button><div class="ans"><div><p>No. They support everyday comfort and recovery. If pain persists, keeps returning or gets worse, please consult a qualified healthcare professional.</p></div></div></div></div><div class="f-group"><h2>Returns</h2><div class="qa"><button type="button" aria-expanded="false">Can I return a product?<span class="pm" aria-hidden="true"></span></button><div class="ans"><div><p>Please see our <a class="inl" href="returns-and-refunds.html">returns and refunds policy</a> for what can be returned and how.</p></div></div></div><div class="qa"><button type="button" aria-expanded="false">My order arrived damaged. What should I do?<span class="pm" aria-hidden="true"></span></button><div class="ans"><div><p>Contact us within <mark class="tbc">time window</mark> of delivery with your order number and a photo, and we will sort it out.</p></div></div></div></div><p class="f-none" id="fnone">No questions match that search. Try another word, or <a class="inl" href="contact.html">contact us</a>.</p></div></div></section>
+<section class="help"><div class="wrap"><div><h2>Still need help?</h2><p>Our team is happy to answer any question.</p></div><div class="acts"><a href="contact.html" class="btn btn-amber">Contact us</a><a href="faqs.html" class="btn btn-ghost">Read FAQs</a></div></div></section>
+<footer><img class="foot-boat" src="assets/mural/mural_boat.png" alt=""><div class="wrap">
+  <img class="foot-sig" src="assets/logo_white.png" alt="Dr. D'Souza's"><div class="foot-line">Care, carried forward.</div>
+  <div class="foot-nav"><a href="pain-therapy.html">Shop</a><a href="about-us.html">Our Story</a><a href="how-we-formulate.html">How We Formulate</a><a href="faqs.html">FAQs</a><a href="contact.html">Contact</a><a href="#">Instagram</a><a href="#">WhatsApp</a></div>
+  <div class="foot-legal"><span>&copy; 2026 Dr. D'Souza's</span><span><a href="privacy-policy.html">Privacy</a><a href="terms-of-service.html">Terms</a><a href="shipping-policy.html">Shipping</a><a href="returns-and-refunds.html">Returns</a></span></div>
+  <div class="foot-unit">Dr. D'Souza's &middot; A unit of KSAC Hospitals (I) Pvt. Ltd.</div>
+</div></footer>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$('#burger').onclick=()=>$('#mobmenu').classList.add('open');$('#mobclose').onclick=()=>$('#mobmenu').classList.remove('open');
+$$('.qa').forEach(q=>{const b=q.querySelector('button');b.addEventListener('click',()=>{const o=q.classList.toggle('open');b.setAttribute('aria-expanded',o);});});
+const fq=$('#fq');if(fq){fq.addEventListener('input',()=>{const t=fq.value.trim().toLowerCase();let n=0;
+  $$('.f-group').forEach(g=>{let gv=0;g.querySelectorAll('.qa').forEach(q=>{const m=!t||q.textContent.toLowerCase().includes(t);q.style.display=m?'':'none';if(m){gv++;n++;}if(t&&m)q.classList.add('open');if(!t)q.classList.remove('open');});g.style.display=gv?'':'none';});
+  $('#fnone').style.display=n?'none':'block';});}
+const f=$('#cform');if(f){f.addEventListener('submit',e=>{e.preventDefault();if(!f.reportValidity())return;f.classList.add('sent');});}
+const side=$('.side .on');if(side&&window.innerWidth<=900){side.scrollIntoView({inline:'center',block:'nearest'});window.scrollTo(0,0);}
+</script>
+</body>
+</html>
