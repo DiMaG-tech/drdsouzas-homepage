@@ -572,6 +572,42 @@ footer .wrap{position:relative;z-index:2}
   *{transition:none!important;animation:none!important}
   .reveal{opacity:1;transform:none}
 }
+.consult p{margin-bottom:24px}
+.consult .consult-btn{font-style:normal}
+@media(max-width:480px){.consult .consult-btn{font-size:11.5px;letter-spacing:.1em;padding:15px 20px;white-space:nowrap}}
+
+/* ===== footer: same as homepage ===== */
+footer{background:var(--choc);color:var(--bone);padding:110px 0 40px;text-align:center;overflow:hidden}
+.foot-sig{width:min(70vw,480px);margin:0 auto 26px;opacity:.95}
+.foot-line{font-family:var(--font-serif);font-size:clamp(22px,3vw,34px);font-weight:300;font-style:italic;margin-bottom:8px}
+.foot-brand{font-family:var(--font-brand);letter-spacing:.22em;font-size:11px;text-transform:uppercase;color:rgba(243,235,221,.6);margin-bottom:60px}
+.foot-nav{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin-bottom:50px}
+.foot-nav a{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(243,235,221,.82);transition:.25s}
+.foot-nav a:hover{color:var(--amber)}
+.foot-legal{border-top:1px solid rgba(243,235,221,.12);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:11.5px;color:rgba(243,235,221,.45)}
+.foot-legal a{margin-left:18px}
+footer{position:relative;overflow:hidden}
+.foot-boat{position:absolute;top:0;left:0;width:100%;opacity:.1;pointer-events:none;z-index:0}
+footer .wrap{position:relative;z-index:2}
+.foot-unit{margin-top:22px;font-family:var(--font-brand);letter-spacing:.14em;font-size:12px;color:rgba(243,235,221,.7);text-transform:uppercase}
+@media(max-width:768px){.foot-nav{gap:18px 22px}.foot-legal{flex-direction:column;text-align:center;gap:12px}.foot-legal a{margin:0 9px}}
+.diff-eyebrow,.hurt-step .time,.card-cat,.card-badge,.view,.cert-support-label,.q-count,.rlabel,.drfilm-note,.foot-unit,.brandline{font-weight:600}
+.foot-line{margin-bottom:6px}
+.foot-brand{margin-bottom:0}
+.foot-nav{margin-top:56px;margin-bottom:56px;gap:20px 46px;max-width:620px;margin-left:auto;margin-right:auto}
+.foot-nav a{font-size:12px;letter-spacing:.14em}
+@media(max-width:768px){.foot-nav{margin-top:44px;margin-bottom:44px;gap:18px 34px}}
+.foot-nav{max-width:none;flex-wrap:nowrap;margin-bottom:26px}
+.foot-nav a{white-space:nowrap}
+.foot-social{display:flex;justify-content:center;gap:16px;margin-bottom:50px}
+.foot-social a{width:44px;height:44px;border-radius:50%;border:1px solid rgba(243,235,221,.28);display:inline-flex;align-items:center;justify-content:center;transition:.3s var(--ease)}
+.foot-social svg{width:20px;height:20px;fill:none;stroke:rgba(243,235,221,.85);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:.3s}
+.foot-social svg .dot,.foot-social svg .fill{fill:rgba(243,235,221,.85);stroke:none}
+.foot-social a:hover{background:var(--amber);border-color:var(--amber);transform:translateY(-2px)}
+.foot-social a:hover svg{stroke:var(--choc)}
+.foot-social a:hover svg .dot,.foot-social a:hover svg .fill{fill:var(--choc)}
+@media(max-width:900px){.foot-nav{flex-wrap:wrap;gap:16px 28px}}
+@media(max-width:768px){.foot-nav{gap:14px 22px;margin-bottom:22px}.foot-social{margin-bottom:40px}}
 </style>
 </head>
 <body>
@@ -579,14 +615,14 @@ footer .wrap{position:relative;z-index:2}
 <!-- NAV (homepage) -->
 <nav id="nav">
   <div class="wrap">
-    <a href="index.html" class="nav-logo"><img src="assets/logo_white_nav.png" alt="Dr. D'Souza's"></a>
+    <a href="homepage-v2.html" class="nav-logo"><img src="assets/logo_white_nav.png" alt="Dr. D'Souza's"></a>
     <div class="nav-links">
-      <a href="index.html#shop" class="cur">Shop</a>
-      <a href="index.html#quiz">Find Your Therapy</a>
-      <a href="index.html#heritage">Our Story</a>
-      <a href="index.html#ingredients">Ingredients</a>
-      <a href="index.html#journal">Journal</a>
-      <a href="index.html#shop" class="nav-cta">Shop the Range</a>
+      <a href="homepage-v2.html#shop" class="cur">Shop</a>
+      <a href="homepage-v2.html#quiz">Find Your Therapy</a>
+      <a href="homepage-v2.html#heritage">Our Story</a>
+      <a href="homepage-v2.html#ingredients">Ingredients</a>
+      <a href="homepage-v2.html#journal">Journal</a>
+      <a href="homepage-v2.html#shop" class="nav-cta">Shop the Range</a>
     </div>
     <div class="nav-icons">
       <svg viewBox="0 0 24 24" aria-label="Search"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
@@ -597,11 +633,11 @@ footer .wrap{position:relative;z-index:2}
 </nav>
 <div class="mobmenu" id="mobmenu">
   <span class="close" id="mobclose">&times;</span>
-  <a href="index.html#shop">Shop</a>
-  <a href="index.html#quiz">Find Your Therapy</a>
-  <a href="index.html#heritage">Our Story</a>
-  <a href="index.html#ingredients">Ingredients</a>
-  <a href="index.html#journal">Journal</a>
+  <a href="homepage-v2.html#shop">Shop</a>
+  <a href="homepage-v2.html#quiz">Find Your Therapy</a>
+  <a href="homepage-v2.html#heritage">Our Story</a>
+  <a href="homepage-v2.html#ingredients">Ingredients</a>
+  <a href="homepage-v2.html#journal">Journal</a>
 </div>
 
 <!-- 01 PRODUCT HERO -->
@@ -609,7 +645,7 @@ footer .wrap{position:relative;z-index:2}
   <img class="mural-corner" src="assets/mural/mural_corner.png" alt="">
   <div class="halo"></div>
   <div class="wrap">
-    <div class="crumbs"><a href="index.html#shop">Shop</a><span>/</span><a href="pain-therapy.html">Pain Therapy</a><span>/</span><span class="cur">Pain Relief Oil</span></div>
+    <div class="crumbs"><a href="homepage-v2.html#shop">Shop</a><span>/</span><a href="pain-therapy.html">Pain Therapy</a><span>/</span><span class="cur">Pain Relief Oil</span></div>
     <div class="pdp-grid">
       <div class="m-title"><div class="tagrow"><span class="seg-tag">Massage</span><a class="coll" href="pain-therapy.html">Pain Therapy Collection</a></div><div class="h1">Pain Relief Oil</div></div>
       <div class="gallery">
@@ -636,7 +672,7 @@ footer .wrap{position:relative;z-index:2}
         <div class="mini-trust">
           <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Since 1998</div>
           <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>Doctor-formulated</div>
-          <div><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>AYUSH GMP-certified facilities</div>
+          <div><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>AYUSH GMP-certified facility</div>
           <div><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Made in India</div>
         </div>
         <p class="ship-note">Ships within India. Delivery timelines and charges will be confirmed at launch.</p>
@@ -645,7 +681,7 @@ footer .wrap{position:relative;z-index:2}
             <button type="button" id="haccDescBtn" aria-expanded="false" aria-controls="haccDesc">Description<span class="pm" aria-hidden="true"></span></button>
             <div class="hacc-body" id="haccDesc" role="region" aria-labelledby="haccDescBtn"><div><div class="hacc-in">
               <p>Created for massage, our Pain Relief Oil helps support daily care for tired muscles and joints while complementing your recovery routine.</p>
-              <p>It is the slow format in the Pain Therapy Collection: warmed between the palms, worked in gently and given the time a tired body asks for. Formulated from decades of Ayurvedic clinical practice and manufactured in licensed AYUSH GMP-certified facilities.</p>
+              <p>It is the slow format in the Pain Therapy Collection: warmed between the palms, worked in gently and given the time a tired body asks for. Formulated from decades of Ayurvedic clinical practice and manufactured at an AYUSH GMP-certified facility.</p>
               <dl>
                 <dt>Format</dt><dd>Massage oil</dd>
                 <dt>Best suited for</dt><dd>Joint discomfort, muscle stiffness, recovery after physical activity, daily self-massage and long-standing aches</dd>
@@ -701,7 +737,7 @@ footer .wrap{position:relative;z-index:2}
     <div class="hurt-sticky">
       <div class="hurt-visual" id="hurtVisual">
         <div class="hurt-shade"></div>
-        <div class="hurt-emerge" id="hurtEmerge"><img src="assets/pdp/product-oil.webp" alt=""></div>
+        <div class="hurt-emerge" id="hurtEmerge"><img src="assets/pdp/product-oil-v2.webp" alt=""></div>
         <div class="hurt-clock"><svg class="clockface" viewBox="0 0 200 200" aria-hidden="true"><circle class="cf-ring" cx="100" cy="100" r="90"/><g class="cf-ticks" id="cfTicks"></g><line class="cf-hour" id="cfHour" x1="100" y1="100" x2="100" y2="58"/><line class="cf-min" id="cfMin" x1="100" y1="100" x2="100" y2="34"/><circle class="cf-cap" cx="100" cy="100" r="4.5"/></svg></div>
         <div class="hurt-progress" id="hurtDots"></div>
       </div>
@@ -770,7 +806,7 @@ footer .wrap{position:relative;z-index:2}
       <div class="role">Ayurvedic Physician &middot; Formulator</div>
       <div class="creds">BAMS, Kerala University &middot; MS, Rajiv Gandhi University &middot; Founder, KSAC Hospitals</div>
     </div>
-    <a href="index.html#doctor" class="btn btn-ghost reveal d3" style="color:var(--bone);align-self:flex-start">Meet Dr. D'Souza</a>
+    <a href="homepage-v2.html#doctor" class="btn btn-ghost reveal d3" style="color:var(--bone);align-self:flex-start">Meet Dr. D'Souza</a>
   </div>
 </section>
 
@@ -825,7 +861,7 @@ footer .wrap{position:relative;z-index:2}
         <li>Is accompanied by swelling, numbness or other concerning symptoms</li>
       </ul>
       <p class="close">We encourage you to consult a qualified healthcare professional. Our products are designed to support everyday comfort and recovery, but they are not intended to replace professional medical assessment when it is needed.</p>
-      <a class="consult-link" href="https://www.ksachospitals.com/?utm_source=drdsouzas&amp;utm_medium=website&amp;utm_campaign=consult_referral" target="_blank" rel="noopener">Kindly consult our experts &rarr;</a>
+      <a class="consult-link" href="https://www.ksachospitals.com/?utm_source=drdsouzas&amp;utm_medium=website&amp;utm_campaign=consult_referral" target="_blank" rel="noopener">Consult the KSAC Clinical Team &rarr;</a>
     </div>
   </div>
 </section>
@@ -864,7 +900,7 @@ footer .wrap{position:relative;z-index:2}
   <div class="wrap">
     <div class="journal-head reveal">
       <div><div class="eyebrow">The Dr. D'Souza's Journal</div><h2>Read more before your next ritual.</h2></div>
-      <a href="index.html#journal" class="btn btn-dark">Read the Journal</a>
+      <a href="homepage-v2.html#journal" class="btn btn-dark">Read the Journal</a>
     </div>
     <div class="jgrid" id="journalGrid"></div>
   </div>
@@ -872,37 +908,43 @@ footer .wrap{position:relative;z-index:2}
 
 <!-- CONSULT / KSAC referral (homepage) -->
 <section class="consult">
-  <div class="wrap"><p>Crafted with utmost care to serve its purpose. Should results fall short, your condition may require personalised attention. <a class="consult-link" href="https://www.ksachospitals.com/?utm_source=drdsouzas&amp;utm_medium=website&amp;utm_campaign=consult_referral" target="_blank" rel="noopener">Kindly consult our experts</a>.</p></div>
+  <div class="wrap"><p>Every Dr. D’Souza’s formulation is created with utmost care. If your concern persists despite use, it may require personalised clinical attention.</p><a class="btn btn-amber consult-btn" href="https://www.ksachospitals.com/?utm_source=drdsouzas&amp;utm_medium=website&amp;utm_campaign=consult_referral" target="_blank" rel="noopener">Consult the KSAC Clinical Team</a></div>
 </section>
 
 <!-- FOOTER (homepage) -->
-<footer id="footer">
-  <img class="foot-boat" src="assets/mural/mural_boat.png" alt="">
+<footer id="footer"><img class="foot-boat" src="assets/mural/mural_boat.png" alt="">
   <div class="wrap">
     <img class="foot-sig" src="assets/logo_white.png" alt="Dr. D'Souza's">
     <div class="foot-line">Care, carried forward.</div>
     <div class="foot-nav">
-      <a href="index.html#shop">Shop</a>
-      <a href="index.html#heritage">Our Story</a>
-      <a href="index.html#journal">Journal</a>
-      <a href="index.html#ingredients">Ingredients</a>
-      <a href="#faq">FAQs</a>
-      <a href="#">Contact</a>
-      <a href="#">Instagram</a>
-      <a href="#">WhatsApp</a>
+      <a href="pain-therapy.html">Shop</a>
+      <a href="about-us.html">Our Story</a>
+      <a href="how-we-formulate.html">How We Formulate</a>
+      <a href="homepage-v2.html#journal">Journal</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="foot-social">
+      <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" class="dot"/></svg></a>
+      <a href="#" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.2-3.9A8.3 8.3 0 1 1 8.4 19z"/><path d="M9.2 8.4c.3-.5.7-.5 1-.3l.9 1.9c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l1.9.9c.3.2.3.7-.2 1-1 .7-2.4.8-3.6.1-1.8-1-3.2-2.4-4.1-4.2-.6-1.1-.4-2.2.7-2.8z" class="fill"/></svg></a>
     </div>
     <div class="foot-legal">
-      <span>&copy; 2026 Dr. D'Souza's</span>
-      <span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Shipping</a><a href="#">Returns</a></span>
+      <span>© 2026 Dr. D'Souza's</span>
+      <span>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <a href="shipping-policy.html">Shipping</a>
+        <a href="returns-and-refunds.html">Returns</a>
+      </span>
     </div>
-    <div class="foot-unit">Dr. D'Souza's &middot; A unit of KSAC Hospitals (I) Pvt. Ltd.</div>
+    <div class="foot-unit">DR. D'SOUZA'S &nbsp;·&nbsp; A unit of KSAC Hospitals (I) Pvt. Ltd.</div>
   </div>
 </footer>
 
 <!-- 12b STICKY PURCHASE -->
 <div class="sticky-buy" id="stickyBuy" aria-hidden="true">
   <div class="wrap">
-    <div class="sb-thumb"><img src="assets/pdp/product-oil.webp" alt=""></div>
+    <div class="sb-thumb"><img src="assets/pdp/product-oil-v2.webp" alt=""></div>
     <div class="sb-info"><b><span class="sb-tag">Massage</span>Pain Relief Oil</b><span>Price on confirmation</span></div>
     <button type="button" class="btn btn-amber js-add">Add to Bag</button>
   </div>
@@ -914,11 +956,11 @@ footer .wrap{position:relative;z-index:2}
    DATA (edit here: swapping the product line-up is a one-block change)
    ===================================================================== */
 const GALLERY=[
-  {src:'assets/pdp/product-oil.webp',label:'Reference render · pack shot pending',alt:'Pain Relief Oil bottle'},
+  {src:'assets/pdp/product-oil-v2.webp',label:'Reference render · pack shot pending',alt:'Pain Relief Oil bottle'},
   {src:'assets/pdp/label-front.webp',label:'Label artwork · front panel',alt:'Pain Relief Oil label artwork',contain:true},
   {src:'assets/pdp/massage-1.webp',label:'Texture',alt:'Warm oil poured into hands'},
   {src:'assets/pdp/massage-2.webp',label:'In use',alt:'Shoulder massage'},
-  {src:'assets/pdp/range.webp',label:'The Pain Therapy range',alt:'The range'}
+  {src:'assets/pdp/range-v2.webp',label:'The Pain Therapy range',alt:'The range'}
 ];
 const MOMENTS=[
   {time:'21:10',label:'09:10 PM',h:'Home. Quiet at last.',ctx:'A slow massage becomes the close of the day.',fit:'Muscle stiffness',img:'assets/pdp/day-night.webp'},
@@ -934,18 +976,18 @@ const INGREDIENTS=[
 const FITS=['Joint discomfort','Muscle stiffness','Recovery after physical activity','Daily self-massage','Long-standing aches'];
 /* Line-up from the client content doc "Pain Therapy Collection" */
 const FORMATS=[
-  {id:'roll',n:'Pain Relief Roll-On',cat:'On the move',tl:'Instant, targeted comfort for life on the move.',when:'Neck pain during work',img:'assets/pdp/product-rollon.webp'},
-  {id:'oil',n:'Pain Relief Oil',cat:'Massage',tl:'Traditional Ayurvedic massage for deeper comfort.',when:'Sore muscles after activity',img:'assets/pdp/product-oil.webp',here:true},
-  {id:'soak',n:'Therapeutic Recovery Soak',cat:'Ritual',tl:'Turn recovery into a ritual.',when:'Tired legs after standing all day',img:null},
-  {id:'rub',n:'Ayurvedic Vapour Rub',cat:'Warmth',tl:'Comforting warmth whenever you need it most.',when:'Muscle tension with seasonal discomfort',img:'assets/pdp/product-balm.webp'},
-  {id:'kizhi',n:'Herbal Therapy Kizhi',cat:'Heat therapy',tl:"Bring one of Ayurveda's most celebrated therapies home.",when:'A deeper recovery ritual',img:'assets/pdp/kizhi.webp'}
+  {id:'roll',n:'Pain Relief Roll-On',cat:'On the move',tl:'Instant, targeted comfort for life on the move.',when:'Neck pain during work',img:'assets/pdp/product-rollon-v2.webp'},
+  {id:'oil',n:'Pain Relief Oil',cat:'Massage',tl:'Traditional Ayurvedic massage for deeper comfort.',when:'Sore muscles after activity',img:'assets/pdp/product-oil-v2.webp',here:true},
+  {id:'balm',n:'Pain Relief Balm',cat:'Pinpoint care',tl:'Focused comfort. No spill.',when:'A knee or joint asking for attention',img:'assets/pdp/product-balm-v2.webp'},
+  {id:'spray',n:'Pain Relief Spray',cat:'Reach more',tl:'Reach more. Rub less.',when:'Back and shoulders after a workout',img:'assets/pdp/product-spray-v2.webp'},
+  {id:'patch',n:'Pain Relief Patch',cat:'Hands-free',tl:'Hands-free care that keeps up.',when:'A long day ahead',img:'assets/pdp/product-patch-v2.webp'}
 ];
 const FAQS=[
   {q:'Who is Pain Relief Oil best suited for?',a:'It is made for joint discomfort, muscle stiffness, recovery after physical activity, daily self-massage and long-standing aches. It suits anyone who can give their care a few unhurried minutes.'},
   {q:'How is the Oil different from the Roll-On?',a:'The Roll-On is designed for quick, targeted comfort on the move. The Oil is created for massage, when there is time for a slower, deeper ritual. Between meetings, reach for the Roll-On. When the day is done, reach for the Oil.'},
   {q:'How often can I use it?',a:'Directions for use and frequency will appear here exactly as approved on the product label.',tbc:true},
   {q:"What's in it?",a:'The full ingredient list will be published here from the approved formulation. Every ingredient is selected for its traditional role, its therapeutic purpose and its contribution to the formulation as a whole.',tbc:true},
-  {q:'Where is it made?',a:'Every Dr. D’Souza’s formulation is manufactured in carefully selected, licensed AYUSH GMP-certified facilities that comply with applicable Ministry of AYUSH and FSSAI regulations.'},
+  {q:'Where is it made?',a:'Every Dr. D’Souza’s formulation is manufactured at an AYUSH GMP-certified facility. The certification is held by our manufacturing partner.'},
   {q:'When should I see a doctor instead?',a:'If your pain persists despite rest, frequently returns, is severe or worsening, limits your movement or comes with swelling or numbness, please consult a qualified healthcare professional. Our products support everyday comfort, they do not replace medical assessment.'},
   {q:'Do you ship across India?',a:'Yes, Dr. D’Souza’s ships within India. Delivery timelines and charges will be confirmed at launch.',tbc:true}
 ];

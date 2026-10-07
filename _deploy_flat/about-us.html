@@ -385,6 +385,42 @@ footer .wrap{position:relative;z-index:2}
   .reveal{opacity:1;transform:none}
   .hl .w{color:var(--ink)}
 }
+.consult p{margin-bottom:24px}
+.consult .consult-btn{font-style:normal}
+@media(max-width:480px){.consult .consult-btn{font-size:11.5px;letter-spacing:.1em;padding:15px 20px;white-space:nowrap}}
+
+/* ===== footer: same as homepage ===== */
+footer{background:var(--choc);color:var(--bone);padding:110px 0 40px;text-align:center;overflow:hidden}
+.foot-sig{width:min(70vw,480px);margin:0 auto 26px;opacity:.95}
+.foot-line{font-family:var(--font-serif);font-size:clamp(22px,3vw,34px);font-weight:300;font-style:italic;margin-bottom:8px}
+.foot-brand{font-family:var(--font-brand);letter-spacing:.22em;font-size:11px;text-transform:uppercase;color:rgba(243,235,221,.6);margin-bottom:60px}
+.foot-nav{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin-bottom:50px}
+.foot-nav a{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(243,235,221,.82);transition:.25s}
+.foot-nav a:hover{color:var(--amber)}
+.foot-legal{border-top:1px solid rgba(243,235,221,.12);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:11.5px;color:rgba(243,235,221,.45)}
+.foot-legal a{margin-left:18px}
+footer{position:relative;overflow:hidden}
+.foot-boat{position:absolute;top:0;left:0;width:100%;opacity:.1;pointer-events:none;z-index:0}
+footer .wrap{position:relative;z-index:2}
+.foot-unit{margin-top:22px;font-family:var(--font-brand);letter-spacing:.14em;font-size:12px;color:rgba(243,235,221,.7);text-transform:uppercase}
+@media(max-width:768px){.foot-nav{gap:18px 22px}.foot-legal{flex-direction:column;text-align:center;gap:12px}.foot-legal a{margin:0 9px}}
+.diff-eyebrow,.hurt-step .time,.card-cat,.card-badge,.view,.cert-support-label,.q-count,.rlabel,.drfilm-note,.foot-unit,.brandline{font-weight:600}
+.foot-line{margin-bottom:6px}
+.foot-brand{margin-bottom:0}
+.foot-nav{margin-top:56px;margin-bottom:56px;gap:20px 46px;max-width:620px;margin-left:auto;margin-right:auto}
+.foot-nav a{font-size:12px;letter-spacing:.14em}
+@media(max-width:768px){.foot-nav{margin-top:44px;margin-bottom:44px;gap:18px 34px}}
+.foot-nav{max-width:none;flex-wrap:nowrap;margin-bottom:26px}
+.foot-nav a{white-space:nowrap}
+.foot-social{display:flex;justify-content:center;gap:16px;margin-bottom:50px}
+.foot-social a{width:44px;height:44px;border-radius:50%;border:1px solid rgba(243,235,221,.28);display:inline-flex;align-items:center;justify-content:center;transition:.3s var(--ease)}
+.foot-social svg{width:20px;height:20px;fill:none;stroke:rgba(243,235,221,.85);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:.3s}
+.foot-social svg .dot,.foot-social svg .fill{fill:rgba(243,235,221,.85);stroke:none}
+.foot-social a:hover{background:var(--amber);border-color:var(--amber);transform:translateY(-2px)}
+.foot-social a:hover svg{stroke:var(--choc)}
+.foot-social a:hover svg .dot,.foot-social a:hover svg .fill{fill:var(--choc)}
+@media(max-width:900px){.foot-nav{flex-wrap:wrap;gap:16px 28px}}
+@media(max-width:768px){.foot-nav{gap:14px 22px;margin-bottom:22px}.foot-social{margin-bottom:40px}}
 </style>
 </head>
 <body>
@@ -392,13 +428,13 @@ footer .wrap{position:relative;z-index:2}
 <!-- NAV (homepage) -->
 <nav id="nav">
   <div class="wrap">
-    <a href="index.html" class="nav-logo"><img src="assets/logo_white_nav.png" alt="Dr. D'Souza's"></a>
+    <a href="homepage-v2.html" class="nav-logo"><img src="assets/logo_white_nav.png" alt="Dr. D'Souza's"></a>
     <div class="nav-links">
       <a href="pain-therapy.html">Shop</a>
-      <a href="index.html#quiz">Find Your Therapy</a>
+      <a href="homepage-v2.html#quiz">Find Your Therapy</a>
       <a href="#top" class="cur">Our Story</a>
-      <a href="index.html#ingredients">Ingredients</a>
-      <a href="index.html#journal">Journal</a>
+      <a href="homepage-v2.html#ingredients">Ingredients</a>
+      <a href="homepage-v2.html#journal">Journal</a>
       <a href="pain-therapy.html" class="nav-cta">Shop the Range</a>
     </div>
     <div class="nav-icons">
@@ -411,10 +447,10 @@ footer .wrap{position:relative;z-index:2}
 <div class="mobmenu" id="mobmenu">
   <span class="close" id="mobclose">&times;</span>
   <a href="pain-therapy.html">Shop</a>
-  <a href="index.html#quiz">Find Your Therapy</a>
+  <a href="homepage-v2.html#quiz">Find Your Therapy</a>
   <a href="#top">Our Story</a>
-  <a href="index.html#ingredients">Ingredients</a>
-  <a href="index.html#journal">Journal</a>
+  <a href="homepage-v2.html#ingredients">Ingredients</a>
+  <a href="homepage-v2.html#journal">Journal</a>
 </div>
 
 <!-- 01 HERO -->
@@ -423,7 +459,7 @@ footer .wrap{position:relative;z-index:2}
   <div class="shade"></div>
   <img class="mural" src="assets/mural/mural_corner.png" alt="">
   <div class="wrap">
-    <div class="crumbs"><a href="index.html">Home</a><span>/</span><span class="cur">Our Story</span></div>
+    <div class="crumbs"><a href="homepage-v2.html">Home</a><span>/</span><span class="cur">Our Story</span></div>
     <span class="eyebrow">Why we exist</span>
     <h1 id="heroH1"><span class="ln"><span>History has never</span></span><span class="ln"><span>been changed by those</span></span><span class="ln"><span>who accepted the world</span></span><span class="ln"><span><em>as it was.</em></span></span></h1>
     <p class="sub">It has always been changed by those who refused to believe that humanity had already discovered its best answers.</p>
@@ -479,7 +515,7 @@ footer .wrap{position:relative;z-index:2}
         <div class="f-row reveal d1"><b>Evidence</b><span class="vs">where</span><s><span>assumptions were comfortable</span></s></div>
         <div class="f-row reveal d2"><b>Discipline</b><span class="vs">where</span><s><span>compromise was profitable</span></s></div>
       </div>
-      <a class="f-film reveal" href="index.html#doctor"><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span><b>Why put your own name on it?</b><span>A short film with Dr. Saji D'Souza. Coming soon.</span></span></a>
+      <a class="f-film reveal" href="homepage-v2.html#doctor"><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span><b>Why put your own name on it?</b><span>A short film with Dr. Saji D'Souza. Coming soon.</span></span></a>
     </div>
   </div>
 </section>
@@ -573,36 +609,42 @@ footer .wrap{position:relative;z-index:2}
     <p class="pre reveal">If, generations from now, Dr. D'Souza's is remembered for anything, let it not be for the number of products we created.</p>
     <h2 class="reveal d1">Let it be because we refused to <em>lower the standard.</em></h2>
     <div class="c-three reveal d2"><span>This is why we exist.</span><span>This is the work we have inherited.</span><span>This is the future we choose to build.</span></div>
-    <div class="c-ctas reveal d3"><a href="pain-therapy.html" class="btn btn-dark">Shop the range</a><a href="index.html#quiz" class="btn btn-ghost">Find your therapy</a></div>
+    <div class="c-ctas reveal d3"><a href="pain-therapy.html" class="btn btn-dark">Shop the range</a><a href="homepage-v2.html#quiz" class="btn btn-ghost">Find your therapy</a></div>
   </div>
 </section>
 
 <!-- CONSULT / KSAC referral (homepage) -->
 <section class="consult">
-  <div class="wrap"><p>Crafted with utmost care to serve its purpose. Should results fall short, your condition may require personalised attention. <a class="consult-link" href="https://www.ksachospitals.com/?utm_source=drdsouzas&amp;utm_medium=website&amp;utm_campaign=consult_referral" target="_blank" rel="noopener">Kindly consult our experts</a>.</p></div>
+  <div class="wrap"><p>Every Dr. D’Souza’s formulation is created with utmost care. If your concern persists despite use, it may require personalised clinical attention.</p><a class="btn btn-amber consult-btn" href="https://www.ksachospitals.com/?utm_source=drdsouzas&amp;utm_medium=website&amp;utm_campaign=consult_referral" target="_blank" rel="noopener">Consult the KSAC Clinical Team</a></div>
 </section>
 
 <!-- FOOTER (homepage) -->
-<footer id="footer">
-  <img class="foot-boat" src="assets/mural/mural_boat.png" alt="">
+<footer id="footer"><img class="foot-boat" src="assets/mural/mural_boat.png" alt="">
   <div class="wrap">
     <img class="foot-sig" src="assets/logo_white.png" alt="Dr. D'Souza's">
     <div class="foot-line">Care, carried forward.</div>
     <div class="foot-nav">
       <a href="pain-therapy.html">Shop</a>
-      <a href="#top">Our Story</a>
-      <a href="index.html#journal">Journal</a>
-      <a href="index.html#ingredients">Ingredients</a>
-      <a href="#">FAQs</a>
-      <a href="#">Contact</a>
-      <a href="#">Instagram</a>
-      <a href="#">WhatsApp</a>
+      <a href="about-us.html">Our Story</a>
+      <a href="how-we-formulate.html">How We Formulate</a>
+      <a href="homepage-v2.html#journal">Journal</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="foot-social">
+      <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" class="dot"/></svg></a>
+      <a href="#" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.2-3.9A8.3 8.3 0 1 1 8.4 19z"/><path d="M9.2 8.4c.3-.5.7-.5 1-.3l.9 1.9c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l1.9.9c.3.2.3.7-.2 1-1 .7-2.4.8-3.6.1-1.8-1-3.2-2.4-4.1-4.2-.6-1.1-.4-2.2.7-2.8z" class="fill"/></svg></a>
     </div>
     <div class="foot-legal">
-      <span>&copy; 2026 Dr. D'Souza's</span>
-      <span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Shipping</a><a href="#">Returns</a></span>
+      <span>© 2026 Dr. D'Souza's</span>
+      <span>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <a href="shipping-policy.html">Shipping</a>
+        <a href="returns-and-refunds.html">Returns</a>
+      </span>
     </div>
-    <div class="foot-unit">Dr. D'Souza's &middot; A unit of KSAC Hospitals (I) Pvt. Ltd.</div>
+    <div class="foot-unit">DR. D'SOUZA'S &nbsp;·&nbsp; A unit of KSAC Hospitals (I) Pvt. Ltd.</div>
   </div>
 </footer>
 
@@ -617,8 +659,8 @@ const CHAPTERS=[
   {mark:'Since then',yr:'Since then',word:true,title:'Thousands of patient interactions.',body:'Formulations are refined through practice. Patterns emerge, and every consultation teaches something no textbook can.',img:'assets/pdp/massage-1.webp',shot:'Reference visual',past:true,bg:'#26170F'},
   {mark:'Evidence',yr:'Evidence',word:true,title:'If it claimed to heal, it deserved to prove it.',body:'A pioneer of evidence-based Ayurveda, Dr. Saji pairs classical therapy with modern diagnostic investigation, documenting outcomes through objective before-and-after medical reports.',img:'assets/pdp/journal-2.webp',shot:'Reference visual',bg:'#2B1910'},
   {mark:'KSAC',yr:'KSAC Hospitals',word:true,tbc:true,title:'Founding KSAC Hospitals.',body:'Dr. Saji works across spine, neuro, joint and chronic pain, and treats only where Ayurveda can make a measurable difference.',img:'assets/pdp/journal-1.webp',shot:'Hospital photo pending',bg:'#311C12'},
-  {mark:'Decades on',yr:'Decades on',word:true,title:'Experience becomes something that can travel beyond the clinic.',body:'Dr. D’Souza’s was never created because the world needed another healthcare brand. The world has enough brands. It needs institutions willing to raise the standard by which healthcare is measured.',img:'assets/pdp/journal-3.webp',shot:'Reference visual',bg:'#3A2016'},
-  {mark:'Today',yr:'Today',word:true,title:'Dr. D’Souza’s leaves the clinic. And comes home with you.',body:'Finished Dr. D’Souza’s products appear, starting with the Pain Therapy Collection.',img:'assets/pdp/range.webp',shot:'Reference visual',link:true,bg:'#4A2618'},
+  {mark:'Decades on',yr:'Decades on',word:true,title:'Experience becomes something that can travel beyond our hospital.',body:'Dr. D’Souza’s was never created because the world needed another healthcare brand. The world has enough brands. It needs institutions willing to raise the standard by which healthcare is measured.',img:'assets/pdp/journal-3.webp',shot:'Reference visual',bg:'#3A2016'},
+  {mark:'Today',yr:'Today',word:true,title:'Dr. D’Souza’s leaves our hospital. And comes home with you.',body:'The formulations refined through years of practice become Dr. D’Souza’s, starting with the Pain Therapy Collection.',img:'assets/pdp/range-v2.webp',shot:'Reference visual',link:true,bg:'#4A2618'},
   {mark:'Next',coda:true,bg:'#5A2E1E'}
 ];
 const VALUES=[

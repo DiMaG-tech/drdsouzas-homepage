@@ -436,6 +436,56 @@ footer .wrap{position:relative;z-index:2}
   .hl .w{color:var(--ink)}.hl.dk .w{color:var(--bone)}
   .m-quote .w{opacity:1;transform:none}
 }
+.certband .certs{grid-template-columns:repeat(2,minmax(0,320px))}
+@media(max-width:768px){.certband .certs{grid-template-columns:1fr}}
+.consult p{margin-bottom:24px}
+.consult .consult-btn{font-style:normal}
+@media(max-width:480px){.consult .consult-btn{font-size:11.5px;letter-spacing:.1em;padding:15px 20px;white-space:nowrap}}
+
+/* ===== footer: same as homepage ===== */
+footer{background:var(--choc);color:var(--bone);padding:110px 0 40px;text-align:center;overflow:hidden}
+.foot-sig{width:min(70vw,480px);margin:0 auto 26px;opacity:.95}
+.foot-line{font-family:var(--font-serif);font-size:clamp(22px,3vw,34px);font-weight:300;font-style:italic;margin-bottom:8px}
+.foot-brand{font-family:var(--font-brand);letter-spacing:.22em;font-size:11px;text-transform:uppercase;color:rgba(243,235,221,.6);margin-bottom:60px}
+.foot-nav{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin-bottom:50px}
+.foot-nav a{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(243,235,221,.82);transition:.25s}
+.foot-nav a:hover{color:var(--amber)}
+.foot-legal{border-top:1px solid rgba(243,235,221,.12);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:11.5px;color:rgba(243,235,221,.45)}
+.foot-legal a{margin-left:18px}
+footer{position:relative;overflow:hidden}
+.foot-boat{position:absolute;top:0;left:0;width:100%;opacity:.1;pointer-events:none;z-index:0}
+footer .wrap{position:relative;z-index:2}
+.foot-unit{margin-top:22px;font-family:var(--font-brand);letter-spacing:.14em;font-size:12px;color:rgba(243,235,221,.7);text-transform:uppercase}
+@media(max-width:768px){.foot-nav{gap:18px 22px}.foot-legal{flex-direction:column;text-align:center;gap:12px}.foot-legal a{margin:0 9px}}
+.diff-eyebrow,.hurt-step .time,.card-cat,.card-badge,.view,.cert-support-label,.q-count,.rlabel,.drfilm-note,.foot-unit,.brandline{font-weight:600}
+.foot-line{margin-bottom:6px}
+.foot-brand{margin-bottom:0}
+.foot-nav{margin-top:56px;margin-bottom:56px;gap:20px 46px;max-width:620px;margin-left:auto;margin-right:auto}
+.foot-nav a{font-size:12px;letter-spacing:.14em}
+@media(max-width:768px){.foot-nav{margin-top:44px;margin-bottom:44px;gap:18px 34px}}
+.foot-nav{max-width:none;flex-wrap:nowrap;margin-bottom:26px}
+.foot-nav a{white-space:nowrap}
+.foot-social{display:flex;justify-content:center;gap:16px;margin-bottom:50px}
+.foot-social a{width:44px;height:44px;border-radius:50%;border:1px solid rgba(243,235,221,.28);display:inline-flex;align-items:center;justify-content:center;transition:.3s var(--ease)}
+.foot-social svg{width:20px;height:20px;fill:none;stroke:rgba(243,235,221,.85);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:.3s}
+.foot-social svg .dot,.foot-social svg .fill{fill:rgba(243,235,221,.85);stroke:none}
+.foot-social a:hover{background:var(--amber);border-color:var(--amber);transform:translateY(-2px)}
+.foot-social a:hover svg{stroke:var(--choc)}
+.foot-social a:hover svg .dot,.foot-social a:hover svg .fill{fill:var(--choc)}
+@media(max-width:900px){.foot-nav{flex-wrap:wrap;gap:16px 28px}}
+@media(max-width:768px){.foot-nav{gap:14px 22px;margin-bottom:22px}.foot-social{margin-bottom:40px}}
+
+/* ===== certification band: centred 2-card layout ===== */
+.certband .cb-head{flex-direction:column;align-items:center;text-align:center;gap:12px;margin-bottom:34px}
+.certband .cb-head p{max-width:560px}
+.certband .certs{grid-template-columns:repeat(2,minmax(0,380px));justify-content:center;align-items:stretch;gap:16px}
+.certband .cert{flex-direction:row;align-items:center;justify-content:flex-start;text-align:left;gap:16px;padding:22px 24px;min-height:96px}
+.certband .cert .ci{position:static;transform:none;margin:0;flex:0 0 44px;width:44px;height:44px}
+.certband .cert .ct{flex:1;min-width:0}
+.certband .cert h4{font-size:14px}
+.certband .cert p{font-size:12.5px;margin-top:4px}
+.certband .c-note{text-align:center;margin-top:20px}
+@media(max-width:768px){.certband .certs{grid-template-columns:minmax(0,1fr);max-width:440px;margin:0 auto}}
 </style>
 </head>
 <body>
@@ -443,13 +493,13 @@ footer .wrap{position:relative;z-index:2}
 <!-- NAV (homepage) -->
 <nav id="nav">
   <div class="wrap">
-    <a href="index.html" class="nav-logo"><img src="assets/logo_white_nav.png" alt="Dr. D'Souza's"></a>
+    <a href="homepage-v2.html" class="nav-logo"><img src="assets/logo_white_nav.png" alt="Dr. D'Souza's"></a>
     <div class="nav-links">
       <a href="pain-therapy.html">Shop</a>
-      <a href="index.html#quiz">Find Your Therapy</a>
+      <a href="homepage-v2.html#quiz">Find Your Therapy</a>
       <a href="about-us.html">Our Story</a>
       <a href="#ingredients" class="cur">Ingredients</a>
-      <a href="index.html#journal">Journal</a>
+      <a href="homepage-v2.html#journal">Journal</a>
       <a href="pain-therapy.html" class="nav-cta">Shop the Range</a>
     </div>
     <div class="nav-icons">
@@ -462,10 +512,10 @@ footer .wrap{position:relative;z-index:2}
 <div class="mobmenu" id="mobmenu">
   <span class="close" id="mobclose">&times;</span>
   <a href="pain-therapy.html">Shop</a>
-  <a href="index.html#quiz">Find Your Therapy</a>
+  <a href="homepage-v2.html#quiz">Find Your Therapy</a>
   <a href="about-us.html">Our Story</a>
   <a href="#ingredients">Ingredients</a>
-  <a href="index.html#journal">Journal</a>
+  <a href="homepage-v2.html#journal">Journal</a>
 </div>
 
 <!-- 01 HERO -->
@@ -474,10 +524,10 @@ footer .wrap{position:relative;z-index:2}
   <div class="shade"></div>
   <img class="mural" src="assets/mural/mural_corner.png" alt="">
   <div class="wrap">
-    <div class="crumbs"><a href="index.html">Home</a><span>/</span><span class="cur">How We Formulate</span></div>
+    <div class="crumbs"><a href="homepage-v2.html">Home</a><span>/</span><span class="cur">How We Formulate</span></div>
     <span class="eyebrow">How we formulate</span>
     <h1><span class="ln"><span>Quality is decided long</span></span><span class="ln"><span>before a product is <em>made.</em></span></span></h1>
-    <p class="sub">Every Dr. D'Souza's formulation starts in clinical practice, draws on classical Ayurveda and is manufactured to certified standards.</p>
+    <p class="sub">Every Dr. D'Souza's formulation starts in clinical practice, draws on classical Ayurveda and is manufactured at an AYUSH GMP-certified facility.</p>
   </div>
   <div class="scrollcue">Scroll<i></i></div>
 </section>
@@ -509,7 +559,7 @@ footer .wrap{position:relative;z-index:2}
     <div class="lab">
       <div class="ring" id="ring" aria-label="Ingredients">
         <svg class="links" viewBox="0 0 520 520" aria-hidden="true" id="links"></svg>
-        <div class="core"><img src="assets/pdp/product-oil.webp" alt="Pain Relief Oil"><span>Pain Relief Oil</span></div>
+        <div class="core"><img src="assets/pdp/product-oil-v2.webp" alt="Pain Relief Oil"><span>Pain Relief Oil</span></div>
       </div>
       <div class="icard" id="icard" aria-live="polite">
         <div class="ic-img" id="icImg"><img id="icPhoto" alt=""><span class="lens" id="lens" aria-hidden="true"></span><span class="lens-tip">Move to look closer</span></div>
@@ -563,7 +613,7 @@ footer .wrap{position:relative;z-index:2}
     <div class="j-grid" id="jGrid">
       <div class="j-track" aria-hidden="true">
         <div class="j-rail"><i id="jFill"></i></div>
-        <div class="j-bottle" id="jBottle"><img src="assets/pdp/product-oil.webp" alt=""></div>
+        <div class="j-bottle" id="jBottle"><img src="assets/pdp/product-oil-v2.webp" alt=""></div>
       </div>
       <ol class="j-steps" id="jSteps"></ol>
     </div>
@@ -573,7 +623,7 @@ footer .wrap{position:relative;z-index:2}
 <!-- 07b CERTIFICATIONS (compact) -->
 <section class="certband" id="certifications">
   <div class="wrap">
-    <div class="cb-head"><div class="eyebrow reveal">Manufactured to standard</div><p class="reveal d1">Our manufacturing partners hold these certifications.</p></div>
+    <div class="cb-head"><div class="eyebrow reveal">Manufactured to standard</div><p class="reveal d1">These certifications are held by our manufacturing partner's facility, not by Dr. D'Souza's.</p></div>
     <div class="certs" id="certs"></div>
     <p class="c-note reveal">Official certificate marks will be displayed once verified.</p>
   </div>
@@ -591,30 +641,36 @@ footer .wrap{position:relative;z-index:2}
 
 <!-- CONSULT / KSAC referral (homepage) -->
 <section class="consult">
-  <div class="wrap"><p>Crafted with utmost care to serve its purpose. Should results fall short, your condition may require personalised attention. <a class="consult-link" href="https://www.ksachospitals.com/?utm_source=drdsouzas&amp;utm_medium=website&amp;utm_campaign=consult_referral" target="_blank" rel="noopener">Kindly consult our experts</a>.</p></div>
+  <div class="wrap"><p>Every Dr. D’Souza’s formulation is created with utmost care. If your concern persists despite use, it may require personalised clinical attention.</p><a class="btn btn-amber consult-btn" href="https://www.ksachospitals.com/?utm_source=drdsouzas&amp;utm_medium=website&amp;utm_campaign=consult_referral" target="_blank" rel="noopener">Consult the KSAC Clinical Team</a></div>
 </section>
 
 <!-- FOOTER (homepage) -->
-<footer id="footer">
-  <img class="foot-boat" src="assets/mural/mural_boat.png" alt="">
+<footer id="footer"><img class="foot-boat" src="assets/mural/mural_boat.png" alt="">
   <div class="wrap">
     <img class="foot-sig" src="assets/logo_white.png" alt="Dr. D'Souza's">
     <div class="foot-line">Care, carried forward.</div>
     <div class="foot-nav">
       <a href="pain-therapy.html">Shop</a>
       <a href="about-us.html">Our Story</a>
-      <a href="#top">How We Formulate</a>
-      <a href="index.html#journal">Journal</a>
-      <a href="#">FAQs</a>
-      <a href="#">Contact</a>
-      <a href="#">Instagram</a>
-      <a href="#">WhatsApp</a>
+      <a href="how-we-formulate.html">How We Formulate</a>
+      <a href="homepage-v2.html#journal">Journal</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="foot-social">
+      <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" class="dot"/></svg></a>
+      <a href="#" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.2-3.9A8.3 8.3 0 1 1 8.4 19z"/><path d="M9.2 8.4c.3-.5.7-.5 1-.3l.9 1.9c.1.3 0 .6-.2.8l-.5.5c.6 1.2 1.6 2.2 2.8 2.8l.5-.5c.2-.2.5-.3.8-.2l1.9.9c.3.2.3.7-.2 1-1 .7-2.4.8-3.6.1-1.8-1-3.2-2.4-4.1-4.2-.6-1.1-.4-2.2.7-2.8z" class="fill"/></svg></a>
     </div>
     <div class="foot-legal">
-      <span>&copy; 2026 Dr. D'Souza's</span>
-      <span><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Shipping</a><a href="#">Returns</a></span>
+      <span>© 2026 Dr. D'Souza's</span>
+      <span>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <a href="shipping-policy.html">Shipping</a>
+        <a href="returns-and-refunds.html">Returns</a>
+      </span>
     </div>
-    <div class="foot-unit">Dr. D'Souza's &middot; A unit of KSAC Hospitals (I) Pvt. Ltd.</div>
+    <div class="foot-unit">DR. D'SOUZA'S &nbsp;·&nbsp; A unit of KSAC Hospitals (I) Pvt. Ltd.</div>
   </div>
 </footer>
 
@@ -631,17 +687,13 @@ const INGREDIENTS=[
 ];
 const TESTS=['Its traditional role','Its therapeutic purpose','Its relationship with the other ingredients','Its contribution to the formulation as a whole'];
 const CERTS=[
-  {h:'AYUSH GMP',p:'Certified manufacturing',ic:'<path d="M2 21h20"/><path d="M4 21v-8l5 3v-3l5 3V8l5 3v7"/>'},
-  {h:'ISO 9001:2015',p:'Quality Management',ic:'<circle cx="12" cy="9" r="5"/><path d="M8.5 13l-1.5 8L12 18.5 17 21l-1.5-8"/>'},
-  {h:'ISO 14001:2015',p:'Environmental Management',ic:'<path d="M20 4C9 4 4 11 4 20"/><path d="M4 20C14 20 20 13 20 4"/><path d="M8 16c3-3 6-5 9-6"/>'},
-  {h:'ISO 45001:2018',p:'Occupational Health & Safety',ic:'<path d="M12 3l8 3.5v5c0 5-3.5 8-8 9.5-4.5-1.5-8-4.5-8-9.5v-5z"/><path d="M12 9.5v5M9.5 12h5"/>'},
-  {h:'Ministry of AYUSH & FSSAI',p:'Regulatory compliance',ic:'<rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8 8h8M8 12h8M8 16h5"/>'},
-  {h:'Halal & Kosher',p:'Where applicable',ic:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.8 2.6 2.8 15.4 0 18M12 3c-2.8 2.6-2.8 15.4 0 18"/>'}
+  {h:'AYUSH GMP',p:'Manufactured at an AYUSH GMP-certified facility',ic:'<path d="M2 21h20"/><path d="M4 21v-8l5 3v-3l5 3V8l5 3v7"/>'},
+  {h:'ISO 9001:2015',p:'Quality management, held by our manufacturing facility',ic:'<circle cx="12" cy="9" r="5"/><path d="M8.5 13l-1.5 8L12 18.5 17 21l-1.5-8"/>'}
 ];
 const STEPS=[
   {t:'Doctor-led formulation',p:'Built on clinical experience and evidence-based principles.'},
   {t:'Responsible ingredient selection',p:'Each ingredient checked for identity, quality and authenticity.'},
-  {t:'Precision manufacturing',p:'Made in licensed AYUSH GMP-certified facilities for consistency from batch to batch.'},
+  {t:'Precision manufacturing',p:'Made at an AYUSH GMP-certified facility for consistency from batch to batch.'},
   {t:'Quality verification',p:'Every batch verified for identity, safety and consistency before release.'},
   {t:'Final brand approval',p:'Only then does it carry the Dr. D\u2019Souza\u2019s name.'},
   {t:'Delivered with confidence',p:'From our family to yours.'}
@@ -710,7 +762,7 @@ balBtn.onclick=()=>{const h=bal.classList.toggle('heavy');balBtn.textContent=h?'
   balMsg.textContent=h?'A longer list is not a better product.':'Balanced again.';};
 
 // ---------- Certifications ----------
-$('#certs').innerHTML=CERTS.map((c,i)=>'<div class="cert reveal'+(i%2?' d1':'')+'" tabindex="0"><span class="ci"><svg viewBox="0 0 24 24">'+c.ic+'</svg></span><h4>'+c.h+'</h4><p>'+c.p+'</p></div>').join('');
+$('#certs').innerHTML=CERTS.map((c,i)=>'<div class="cert reveal'+(i%2?' d1':'')+'" tabindex="0"><span class="ci"><svg viewBox="0 0 24 24">'+c.ic+'</svg></span><div class="ct"><h4>'+c.h+'</h4><p>'+c.p+'</p></div></div>').join('');
 
 // ---------- Journey of trust ----------
 $('#jSteps').innerHTML=STEPS.map((s,i)=>'<li class="j-step"><div class="n">0'+(i+1)+'</div><div><h3>'+s.t+'</h3><p>'+s.p+'</p>'+(s.k?'<span class="kick">'+s.k+'</span>':'')+'</div></li>').join('');
