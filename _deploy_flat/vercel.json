@@ -1,5 +1,7 @@
 {
   "redirects": [
-    { "source": "/", "destination": "/homepage-v2.html", "permanent": false }
+    { "source": "/", "destination": "/homepage-v2.html", "permanent": false },
+    { "source": "/returns-and-refunds.html", "destination": "/replacement-policy.html", "permanent": false },
+    { "source": "/terms-of-service.html", "destination": "/terms-and-conditions.html", "permanent": false }
   ]
 }
